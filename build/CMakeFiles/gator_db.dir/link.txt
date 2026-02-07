@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/gator_db.dir/main.cpp.o CMakeFiles/gator_db.dir/src/common/statement.cpp.o CMakeFiles/gator_db.dir/src/executer.cpp.o CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o -o gator_db

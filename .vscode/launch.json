@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug gator_db",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/gator_db",
+            "args": [],
+            "cwd": "${workspaceFolder}/build",
+            "preLaunchTask": "build: make"
+        }
+    ]
+}

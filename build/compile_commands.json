@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/gator/C++/Project/GatorDB/build",
+  "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/main.cpp.o -c /Users/gator/C++/Project/GatorDB/main.cpp",
+  "file": "/Users/gator/C++/Project/GatorDB/main.cpp",
+  "output": "CMakeFiles/gator_db.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/gator/C++/Project/GatorDB/build",
+  "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/src/common/statement.cpp.o -c /Users/gator/C++/Project/GatorDB/src/common/statement.cpp",
+  "file": "/Users/gator/C++/Project/GatorDB/src/common/statement.cpp",
+  "output": "CMakeFiles/gator_db.dir/src/common/statement.cpp.o"
+},
+{
+  "directory": "/Users/gator/C++/Project/GatorDB/build",
+  "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/src/executer.cpp.o -c /Users/gator/C++/Project/GatorDB/src/executer.cpp",
+  "file": "/Users/gator/C++/Project/GatorDB/src/executer.cpp",
+  "output": "CMakeFiles/gator_db.dir/src/executer.cpp.o"
+},
+{
+  "directory": "/Users/gator/C++/Project/GatorDB/build",
+  "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o -c /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp",
+  "file": "/Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp",
+  "output": "CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o"
+}
+]
