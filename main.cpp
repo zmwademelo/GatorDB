@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <memory>
 #include "storage/disk_manager.h"
 #include "common/statement.h"
 #include "src/executer.h"
@@ -33,7 +34,7 @@ int main() {
     char read_buffer[PAGE_SIZE];
     disk.ReadPage(0, read_buffer);
 
-    std::cout << "Read from disk: " << read_buffer << std::endl;
+    std::cout << "Read from disk: " << read_buffer << std::endl; 
 
     while (true){
         std::cout << "Gator > "<< "(Press q to quit: )" << std::endl; 
@@ -48,11 +49,12 @@ int main() {
                 std::cout << "gator > ";
                 std::string input;
                 std::getline(std::cin, input); 
-                StatementParser* stmt = new StatementParser(input);
-                Executer executer = Executer(*stmt);
-                //execute_command(stmt);
-                executer.execute_command(*stmt, disk);
-                delete stmt;
+                std::unique_ptr<StatementParser> stmt(new StatementParser());
+                stmt->parse_statement(input);
+                //Executer executer = Executer(*stmt);
+                std::unique_ptr<Executer> executer(new Executer(*stmt));
+                executer->execute_command(*stmt, disk);
+                //delete stmt;
             }
 
     return 0;

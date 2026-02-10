@@ -7,6 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/gator_db.dir/src/executer.cpp.o.d"
   "CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o"
   "CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o.d"
+  "CMakeFiles/gator_db.dir/src/storage/pager.cpp.o"
+  "CMakeFiles/gator_db.dir/src/storage/pager.cpp.o.d"
+  "CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o"
+  "CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o.d"
   "gator_db"
   "gator_db.pdb"
 )

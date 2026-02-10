@@ -22,5 +22,17 @@
   "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o -c /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp",
   "file": "/Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp",
   "output": "CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o"
+},
+{
+  "directory": "/Users/gator/C++/Project/GatorDB/build",
+  "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/src/storage/pager.cpp.o -c /Users/gator/C++/Project/GatorDB/src/storage/pager.cpp",
+  "file": "/Users/gator/C++/Project/GatorDB/src/storage/pager.cpp",
+  "output": "CMakeFiles/gator_db.dir/src/storage/pager.cpp.o"
+},
+{
+  "directory": "/Users/gator/C++/Project/GatorDB/build",
+  "command": "/usr/bin/clang++  -I/Users/gator/C++/Project/GatorDB/src -g -std=gnu++17 -arch arm64 -o CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o -c /Users/gator/C++/Project/GatorDB/src/storage/table_page.cpp",
+  "file": "/Users/gator/C++/Project/GatorDB/src/storage/table_page.cpp",
+  "output": "CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o"
 }
 ]

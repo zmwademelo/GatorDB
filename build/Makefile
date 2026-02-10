@@ -225,6 +225,54 @@ src/storage/disk_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.s
 .PHONY : src/storage/disk_manager.cpp.s
 
+src/storage/pager.o: src/storage/pager.cpp.o
+.PHONY : src/storage/pager.o
+
+# target to build an object file
+src/storage/pager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/pager.cpp.o
+.PHONY : src/storage/pager.cpp.o
+
+src/storage/pager.i: src/storage/pager.cpp.i
+.PHONY : src/storage/pager.i
+
+# target to preprocess a source file
+src/storage/pager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/pager.cpp.i
+.PHONY : src/storage/pager.cpp.i
+
+src/storage/pager.s: src/storage/pager.cpp.s
+.PHONY : src/storage/pager.s
+
+# target to generate assembly for a file
+src/storage/pager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/pager.cpp.s
+.PHONY : src/storage/pager.cpp.s
+
+src/storage/table_page.o: src/storage/table_page.cpp.o
+.PHONY : src/storage/table_page.o
+
+# target to build an object file
+src/storage/table_page.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o
+.PHONY : src/storage/table_page.cpp.o
+
+src/storage/table_page.i: src/storage/table_page.cpp.i
+.PHONY : src/storage/table_page.i
+
+# target to preprocess a source file
+src/storage/table_page.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/table_page.cpp.i
+.PHONY : src/storage/table_page.cpp.i
+
+src/storage/table_page.s: src/storage/table_page.cpp.s
+.PHONY : src/storage/table_page.s
+
+# target to generate assembly for a file
+src/storage/table_page.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/table_page.cpp.s
+.PHONY : src/storage/table_page.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +294,12 @@ help:
 	@echo "... src/storage/disk_manager.o"
 	@echo "... src/storage/disk_manager.i"
 	@echo "... src/storage/disk_manager.s"
+	@echo "... src/storage/pager.o"
+	@echo "... src/storage/pager.i"
+	@echo "... src/storage/pager.s"
+	@echo "... src/storage/table_page.o"
+	@echo "... src/storage/table_page.i"
+	@echo "... src/storage/table_page.s"
 .PHONY : help
 
 

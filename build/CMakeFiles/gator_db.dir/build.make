@@ -128,12 +128,42 @@ CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp -o CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.s
 
+CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: CMakeFiles/gator_db.dir/flags.make
+CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorDB/src/storage/pager.cpp
+CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: CMakeFiles/gator_db.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gator_db.dir/src/storage/pager.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gator_db.dir/src/storage/pager.cpp.o -MF CMakeFiles/gator_db.dir/src/storage/pager.cpp.o.d -o CMakeFiles/gator_db.dir/src/storage/pager.cpp.o -c /Users/gator/C++/Project/GatorDB/src/storage/pager.cpp
+
+CMakeFiles/gator_db.dir/src/storage/pager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gator_db.dir/src/storage/pager.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gator/C++/Project/GatorDB/src/storage/pager.cpp > CMakeFiles/gator_db.dir/src/storage/pager.cpp.i
+
+CMakeFiles/gator_db.dir/src/storage/pager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gator_db.dir/src/storage/pager.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gator/C++/Project/GatorDB/src/storage/pager.cpp -o CMakeFiles/gator_db.dir/src/storage/pager.cpp.s
+
+CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: CMakeFiles/gator_db.dir/flags.make
+CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/GatorDB/src/storage/table_page.cpp
+CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: CMakeFiles/gator_db.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o -MF CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o.d -o CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o -c /Users/gator/C++/Project/GatorDB/src/storage/table_page.cpp
+
+CMakeFiles/gator_db.dir/src/storage/table_page.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gator_db.dir/src/storage/table_page.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/gator/C++/Project/GatorDB/src/storage/table_page.cpp > CMakeFiles/gator_db.dir/src/storage/table_page.cpp.i
+
+CMakeFiles/gator_db.dir/src/storage/table_page.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gator_db.dir/src/storage/table_page.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/gator/C++/Project/GatorDB/src/storage/table_page.cpp -o CMakeFiles/gator_db.dir/src/storage/table_page.cpp.s
+
 # Object files for target gator_db
 gator_db_OBJECTS = \
 "CMakeFiles/gator_db.dir/main.cpp.o" \
 "CMakeFiles/gator_db.dir/src/common/statement.cpp.o" \
 "CMakeFiles/gator_db.dir/src/executer.cpp.o" \
-"CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o"
+"CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o" \
+"CMakeFiles/gator_db.dir/src/storage/pager.cpp.o" \
+"CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o"
 
 # External object files for target gator_db
 gator_db_EXTERNAL_OBJECTS =
@@ -142,9 +172,11 @@ gator_db: CMakeFiles/gator_db.dir/main.cpp.o
 gator_db: CMakeFiles/gator_db.dir/src/common/statement.cpp.o
 gator_db: CMakeFiles/gator_db.dir/src/executer.cpp.o
 gator_db: CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o
+gator_db: CMakeFiles/gator_db.dir/src/storage/pager.cpp.o
+gator_db: CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o
 gator_db: CMakeFiles/gator_db.dir/build.make
 gator_db: CMakeFiles/gator_db.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable gator_db"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable gator_db"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gator_db.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

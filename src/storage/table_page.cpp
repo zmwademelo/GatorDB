@@ -1,5 +1,9 @@
 #include "table_page.h"
 #include <string>
+/*
+Function of TablePage class: 
+1. Take Pager, TablePage and StatementParser as input, and perform the actual record-level operations like insert, select, and delete.
+*/
 
 void TablePage::initialize_empty_page() {
     PageHeader* header = get_page_header();
@@ -32,14 +36,14 @@ uint16_t TablePage::insert_record(const char* record_data) {
     uint16_t offset = header->upper_bound - record_length; 
     std::memcpy(data_ + offset, record_data, record_length);
     // Update the slot directory
-    uint16_t new_slot_num = header->slot_count++;
+    uint16_t new_slot_num = header->slot_count;
     slots[new_slot_num].offset = offset; 
     slots[new_slot_num].length = record_length;
     // Update the page header
     header->upper_bound = offset;
     header->free_space -= required_space;
     header->lower_bound += sizeof(Slot);
-    header->slot_count++;
+    header->slot_count++; 
     return new_slot_num; // Return the slot number where the record was inserted
 }
 
@@ -50,16 +54,18 @@ bool TablePage::delete_record(uint16_t slot_num) {
         return false;
     }
     slot->length = -slot->length; // Mark the slot as deleted by negating the length
-    header->free_space += (-slot->length); // Increase free space by the size of the deleted record
+    //TBD
+    //header->free_space += (-slot->length); // Increase free space by the size of the deleted record
     return true;
     
 }
 
-char* TablePage::get_record(uint16_t slot_num) {
+std::string TablePage::get_record(uint16_t slot_num) {
     PageHeader* header = get_page_header(); 
     Slot* slot = get_slot(slot_num); 
     if (slot == nullptr || slot->length < 0) { // Invalid slot number or deleted record
-        return nullptr;
+        std::cout << "Error: Record not found or has been deleted. " << std::endl;
+        return ""; 
     }
-    return data_ + slot->offset; // Return pointer to the record data
+    return std::string(data_ + slot->offset, slot->length); // Return a substring based on the offset and length. 
 }

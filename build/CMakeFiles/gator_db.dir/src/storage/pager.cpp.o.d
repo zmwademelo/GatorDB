@@ -1,8 +1,7 @@
-CMakeFiles/gator_db.dir/src/executer.cpp.o: \
-  /Users/gator/C++/Project/GatorDB/src/executer.cpp \
-  /Users/gator/C++/Project/GatorDB/src/executer.h \
-  /Users/gator/C++/Project/GatorDB/src/common/statement.h \
-  /Users/gator/C++/Project/GatorDB/src/common/rid.h \
+CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: \
+  /Users/gator/C++/Project/GatorDB/src/storage/pager.cpp \
+  /Users/gator/C++/Project/GatorDB/src/storage/pager.h \
+  /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -34,7 +33,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
-  /Users/gator/C++/Project/GatorDB/src/common/config.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -646,7 +645,6 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pstl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/sample.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
-  /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api.h \
@@ -817,6 +815,6 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/gator/C++/Project/GatorDB/src/storage/pager.h \
   /Users/gator/C++/Project/GatorDB/src/storage/table_page.h \
+  /Users/gator/C++/Project/GatorDB/src/common/rid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

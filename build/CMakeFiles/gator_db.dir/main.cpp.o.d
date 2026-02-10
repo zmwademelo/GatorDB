@@ -816,4 +816,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Users/gator/C++/Project/GatorDB/src/common/statement.h \
-  /Users/gator/C++/Project/GatorDB/src/executer.h
+  /Users/gator/C++/Project/GatorDB/src/common/rid.h \
+  /Users/gator/C++/Project/GatorDB/src/executer.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/pager.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h
