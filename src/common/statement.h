@@ -67,6 +67,7 @@ class StatementParser {
         STATEMENT_INSERT, 
         STATEMENT_SELECT,
         STATEMENT_DELETE, 
+        STATEMENT_PEEK, //For debug
         STATEMENT_EXIT, 
         STATEMENT_UNKNOWN
     }; 

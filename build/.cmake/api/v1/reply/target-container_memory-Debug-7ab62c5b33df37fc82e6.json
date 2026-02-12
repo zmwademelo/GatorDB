@@ -1,0 +1,94 @@
+{
+	"abstract" : true,
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"absl_cc_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"build/_deps/absl-src/CMake/AbseilHelpers.cmake",
+			"build/_deps/absl-src/absl/container/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 456,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 321,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 332,
+				"parent" : 1
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "container_memory::@de4a077cf7bddfa60d24",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "config::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "memory::@0550afcda42747c17eeb"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "type_traits::@e6128134e8e9a760f798"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "utility::@d4b871060bb72f1611c2"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "config::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "memory::@0550afcda42747c17eeb"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "type_traits::@e6128134e8e9a760f798"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "utility::@d4b871060bb72f1611c2"
+		}
+	],
+	"name" : "container_memory",
+	"paths" : 
+	{
+		"build" : "_deps/absl-build/absl/container",
+		"source" : "build/_deps/absl-src/absl/container"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

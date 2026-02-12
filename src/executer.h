@@ -2,6 +2,7 @@
 #include "common/statement.h"
 #include "storage/disk_manager.h"
 #include "storage/pager.h"
+//#include "storage/table_page.h"
 #include <iostream>
 #include <string>
 
@@ -12,6 +13,7 @@ class Executer{
         void execute_command(const StatementParser& stmt, DiskManager& disk); 
         void execute_insert(const StatementParser& stmt, DiskManager& disk); 
         void execute_select(const StatementParser& stmt, DiskManager& disk); 
+        void execute_peek(const StatementParser& stmt, DiskManager& disk); //For debug
         void execute_delete(const StatementParser& stmt, DiskManager& disk);
     private:
         StatementParser parser_; 

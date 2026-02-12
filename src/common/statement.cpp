@@ -125,6 +125,18 @@ bool StatementParser::parse_statement(const std::string& input_line_) {
             return false; 
         }
     }
+    else if(str_to_upper(command) == "PEEK") {
+        type_ = STATEMENT_PEEK; 
+        page_id_t pid; 
+        if (ss >> pid) {
+            target_rid_ = RID(pid, 0); //Iterate from the first slot
+            return true; 
+        } else {
+            std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << command << "<page_id>" << std::endl; 
+            return false; 
+        }
+        return true; 
+    }
     else if (str_to_upper(command) == "EXIT" || str_to_upper(command) == "QUIT") {
         type_ = STATEMENT_EXIT; 
         return true; 

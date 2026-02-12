@@ -43,6 +43,10 @@ class Pager {
         void increment_global_record_count(); 
         void decrement_global_record_count();
 
+        FileHeader* get_file_header() {
+            return &header_; 
+        }
+
     private:
         FileHeader header_;
         DiskManager* disk_manager_;

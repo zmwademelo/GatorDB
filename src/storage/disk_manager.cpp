@@ -59,12 +59,28 @@ bool DiskManager::write_page(page_id_t page_id, const char* data){
 //page_id_t page_id: This is a uint32_t representing which 4KB block you want.
 //char* data: This is a pointer to the destination memory in RAM where the disk data will be copied. It is not const because the function needs to modify (fill) this memory.
 bool DiskManager::read_page(page_id_t page_id, char* data){
+    if(!db_io_.is_open()){
+        std::cerr << "Error: File is not open for reading!" << std::endl;
+        return false;
+    }
+    
+    // Clear any existing error flags
+    db_io_.clear();
+    
     size_t offset = page_id * PAGE_SIZE; //A variable that stores the exact "byte address" in the file.
     //This moves the file's internal pointer to the correct position.
     db_io_.seekg(offset); //If you want Page #2, the offset is 2 times 4096 = 8192$. This tells the computer to skip the first 8192 bytes of the file to reach the start of the second page.
+    
+    if(db_io_.fail()){
+        std::cerr << "Error: seekg failed! Offset: " << offset << ", State: " << db_io_.rdstate() << std::endl;
+        return false;
+    }
+    
     //This reads 4096 bytes from the file into the memory pointed to by 'data'. data is the pointer for destination. PAGE_SIZE is the chunk size to read.
     db_io_.read(data, PAGE_SIZE); //The first parameter tells the function where to put those bytes, and the second parameter tells it how many bytes to read (4096 bytes for a standard page).
-    if(db_io_.fail()){
+    
+    if(db_io_.fail() && !db_io_.eof()){
+        std::cerr << "Error: Read failed! State flags: " << db_io_.rdstate() << std::endl;
         return false; 
     }
     return true; 

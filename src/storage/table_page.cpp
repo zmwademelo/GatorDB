@@ -6,17 +6,17 @@ Function of TablePage class:
 */
 
 void TablePage::initialize_empty_page() {
-    PageHeader* header = get_page_header();
+    auto header = get_page_header();
     header->magic_number = GATORDB_MAGIC_NUMBER;
-    header->upper_bound = PAGE_SIZE; // The upper bound starts right after the page header, which is where the slot directory begins. 
+    header->upper_bound = PAGE_SIZE; 
     header->lower_bound = sizeof(PageHeader);
     header->slot_count = 0; 
     header->free_space = PAGE_SIZE - sizeof(PageHeader);
 }
 
 uint16_t TablePage::insert_record(const char* record_data) {
-    PageHeader* header = get_page_header();
-    Slot* slots = get_slot_directory();
+    auto header = get_page_header();
+    auto slots = get_slot_directory();
     uint16_t record_length = std::strlen(record_data); //Apply strlen to c style string to get the length of the record data.
     uint16_t required_space = record_length + sizeof(Slot); //Calculate the total space needed
     if (header->free_space < required_space) {
@@ -48,24 +48,46 @@ uint16_t TablePage::insert_record(const char* record_data) {
 }
 
 bool TablePage::delete_record(uint16_t slot_num) {
-    PageHeader* header = get_page_header(); 
+    auto header = get_page_header(); 
+    /*
+    auto result = get_slot(slot_num); 
+    if (!result.ok()) {
+        std::cout << "Error: " << result.status().message() << std::endl;
+        return false; 
+    }
+    */
     Slot* slot = get_slot(slot_num); 
     if (slot == nullptr || slot->length < 0) { // Invalid slot number or already deleted
         return false;
     }
+    /*
+    auto slot = *std::move(result);
     slot->length = -slot->length; // Mark the slot as deleted by negating the length
+    */
     //TBD
     //header->free_space += (-slot->length); // Increase free space by the size of the deleted record
+    
     return true;
     
 }
 
 std::string TablePage::get_record(uint16_t slot_num) {
-    PageHeader* header = get_page_header(); 
+    auto header = get_page_header(); 
+    /*
+    auto result = get_slot(slot_num); 
+    if (!result.ok()) {
+        std::cout << "Error: " << result.status().message() << std::endl;
+        return ""; 
+    }
+        */
+    
     Slot* slot = get_slot(slot_num); 
     if (slot == nullptr || slot->length < 0) { // Invalid slot number or deleted record
         std::cout << "Error: Record not found or has been deleted. " << std::endl;
         return ""; 
     }
+    
+    //auto slot = *std::move(result);
     return std::string(data_ + slot->offset, slot->length); // Return a substring based on the offset and length. 
 }
+

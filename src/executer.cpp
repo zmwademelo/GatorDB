@@ -44,6 +44,9 @@ void Executer::execute_command(const StatementParser& stmt, DiskManager& disk){
         case StatementParser::STATEMENT_DELETE: 
             execute_delete(stmt, disk);
             break;
+        case StatementParser::STATEMENT_PEEK: 
+            execute_peek(stmt, disk); 
+            break; 
         case StatementParser::STATEMENT_EXIT:  
             std::cout << "Exiting..." << std::endl;
             exit(0);
@@ -108,4 +111,46 @@ void Executer::execute_delete(const StatementParser& stmt, DiskManager& disk) {
     pager.decrement_global_record_count();
     std::cout << "Record at Page " << target_rid.page_id << ", Slot " << target_rid.slot_num << ":  has been deleted. " << std::endl; 
     return; 
+}
+
+void Executer::execute_peek(const StatementParser& stmt, DiskManager& disk){
+    std::cout << "Peeking..." <<std::endl; 
+    const RID &target_rid = stmt.get_rid(); 
+    Pager pager = Pager(&disk); 
+    FileHeader* file_header = pager.get_file_header(); 
+    if (target_rid.page_id == 0){ //For File header
+        std::cout<< "------File Header: ------" << std::endl;  
+        std::cout <<"Magic Number: " << file_header->magic_number_ << std::endl; 
+        std::cout <<"Next Page ID: " << file_header->next_page_id << std::endl; 
+        std::cout <<"Record Count: " << file_header->record_count << std::endl; 
+        return; 
+    }
+    if (target_rid.page_id >= file_header->next_page_id) {
+        std::cout<< "Page has not been allocated yet. " << std::endl;  
+        return; 
+    }
+    char page_buffer[PAGE_SIZE] = {0}; 
+    pager.read_page(target_rid.page_id, page_buffer); 
+    TablePage page(page_buffer); 
+    std::cout<< "------Page Header: ------" << std::endl; 
+    //auto header_start = reinterpret_cast<TablePage::PageHeader*>(page_buffer); 
+    std::cout <<"Magic Number: " << page.get_page_header()->magic_number << std::endl; 
+    std::cout <<"Upper Bound: " << page.get_page_header()->upper_bound << std::endl;
+    std::cout <<"Lower Bound: " << page.get_page_header()->lower_bound << std::endl;
+    std::cout <<"Slot Count: " << page.get_page_header()->slot_count << std::endl;
+    std::cout <<"Free Space: " << page.get_page_header()->free_space << std::endl; 
+    
+    std::cout<< "------Page Data: ------" << std::endl; 
+    
+    for (auto i = 0; i < page.get_slot_count(); ++i) {
+        TablePage::Slot* slot = page.get_slot(i); 
+        if (slot != nullptr && slot->length > 0)
+        {
+            std::cout << "Slot[" << i <<"]: (" << slot->length << " Bytes) "<< page.get_record(i) << std::endl; 
+        }
+        
+    }
+    
+    return; 
+
 }

@@ -6,16 +6,19 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -44,6 +47,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -601,8 +605,10 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
@@ -623,6 +629,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
@@ -644,6 +651,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -667,6 +675,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
@@ -710,6 +719,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h \
@@ -747,6 +757,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h \
@@ -758,6 +769,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_char.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h \
@@ -769,6 +781,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h \
@@ -777,10 +790,13 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
@@ -810,11 +826,115 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_acle.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  _deps/absl-src/absl/algorithm/algorithm.h \
+  _deps/absl-src/absl/base/attributes.h \
+  _deps/absl-src/absl/base/call_once.h \
+  _deps/absl-src/absl/base/casts.h \
+  _deps/absl-src/absl/base/config.h \
+  _deps/absl-src/absl/base/const_init.h \
+  _deps/absl-src/absl/base/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/atomic_hook.h \
+  _deps/absl-src/absl/base/internal/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/endian.h \
+  _deps/absl-src/absl/base/internal/identity.h \
+  _deps/absl-src/absl/base/internal/inline_variable.h \
+  _deps/absl-src/absl/base/internal/invoke.h \
+  _deps/absl-src/absl/base/internal/low_level_alloc.h \
+  _deps/absl-src/absl/base/internal/low_level_scheduling.h \
+  _deps/absl-src/absl/base/internal/nullability_impl.h \
+  _deps/absl-src/absl/base/internal/per_thread_tls.h \
+  _deps/absl-src/absl/base/internal/raw_logging.h \
+  _deps/absl-src/absl/base/internal/scheduling_mode.h \
+  _deps/absl-src/absl/base/internal/spinlock.h \
+  _deps/absl-src/absl/base/internal/spinlock_wait.h \
+  _deps/absl-src/absl/base/internal/thread_identity.h \
+  _deps/absl-src/absl/base/internal/throw_delegate.h \
+  _deps/absl-src/absl/base/internal/tsan_mutex_interface.h \
+  _deps/absl-src/absl/base/internal/unaligned_access.h \
+  _deps/absl-src/absl/base/log_severity.h \
+  _deps/absl-src/absl/base/macros.h \
+  _deps/absl-src/absl/base/nullability.h \
+  _deps/absl-src/absl/base/optimization.h \
+  _deps/absl-src/absl/base/options.h \
+  _deps/absl-src/absl/base/policy_checks.h \
+  _deps/absl-src/absl/base/port.h \
+  _deps/absl-src/absl/base/thread_annotations.h \
+  _deps/absl-src/absl/container/inlined_vector.h \
+  _deps/absl-src/absl/container/internal/compressed_tuple.h \
+  _deps/absl-src/absl/container/internal/container_memory.h \
+  _deps/absl-src/absl/container/internal/inlined_vector.h \
+  _deps/absl-src/absl/crc/crc32c.h \
+  _deps/absl-src/absl/crc/internal/crc32_x86_arm_combined_simd.h \
+  _deps/absl-src/absl/crc/internal/crc32c_inline.h \
+  _deps/absl-src/absl/crc/internal/crc_cord_state.h \
+  _deps/absl-src/absl/functional/any_invocable.h \
+  _deps/absl-src/absl/functional/function_ref.h \
+  _deps/absl-src/absl/functional/internal/any_invocable.h \
+  _deps/absl-src/absl/functional/internal/function_ref.h \
+  _deps/absl-src/absl/memory/memory.h \
+  _deps/absl-src/absl/meta/type_traits.h \
+  _deps/absl-src/absl/numeric/bits.h \
+  _deps/absl-src/absl/numeric/int128.h \
+  _deps/absl-src/absl/numeric/int128_have_intrinsic.inc \
+  _deps/absl-src/absl/numeric/internal/bits.h \
+  _deps/absl-src/absl/status/internal/status_internal.h \
+  _deps/absl-src/absl/status/internal/statusor_internal.h \
+  _deps/absl-src/absl/status/status.h \
+  _deps/absl-src/absl/status/statusor.h \
+  _deps/absl-src/absl/strings/cord.h \
+  _deps/absl-src/absl/strings/cord_analysis.h \
+  _deps/absl-src/absl/strings/cord_buffer.h \
+  _deps/absl-src/absl/strings/has_absl_stringify.h \
+  _deps/absl-src/absl/strings/has_ostream_operator.h \
+  _deps/absl-src/absl/strings/internal/cord_data_edge.h \
+  _deps/absl-src/absl/strings/internal/cord_internal.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_navigator.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_reader.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_crc.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_flat.h \
+  _deps/absl-src/absl/strings/internal/cordz_functions.h \
+  _deps/absl-src/absl/strings/internal/cordz_handle.h \
+  _deps/absl-src/absl/strings/internal/cordz_info.h \
+  _deps/absl-src/absl/strings/internal/cordz_statistics.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_scope.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_tracker.h \
+  _deps/absl-src/absl/strings/internal/resize_uninitialized.h \
+  _deps/absl-src/absl/strings/internal/str_format/arg.h \
+  _deps/absl-src/absl/strings/internal/str_format/bind.h \
+  _deps/absl-src/absl/strings/internal/str_format/checker.h \
+  _deps/absl-src/absl/strings/internal/str_format/constexpr_parser.h \
+  _deps/absl-src/absl/strings/internal/str_format/extension.h \
+  _deps/absl-src/absl/strings/internal/str_format/output.h \
+  _deps/absl-src/absl/strings/internal/str_format/parser.h \
+  _deps/absl-src/absl/strings/internal/string_constant.h \
+  _deps/absl-src/absl/strings/str_format.h \
+  _deps/absl-src/absl/strings/string_view.h \
+  _deps/absl-src/absl/synchronization/internal/create_thread_identity.h \
+  _deps/absl-src/absl/synchronization/internal/kernel_timeout.h \
+  _deps/absl-src/absl/synchronization/internal/per_thread_sem.h \
+  _deps/absl-src/absl/synchronization/mutex.h \
+  _deps/absl-src/absl/time/civil_time.h \
+  _deps/absl-src/absl/time/clock.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/time_zone.h \
+  _deps/absl-src/absl/time/time.h \
+  _deps/absl-src/absl/types/compare.h \
+  _deps/absl-src/absl/types/internal/span.h \
+  _deps/absl-src/absl/types/optional.h \
+  _deps/absl-src/absl/types/span.h \
+  _deps/absl-src/absl/types/variant.h \
+  _deps/absl-src/absl/utility/utility.h \
   /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Users/gator/C++/Project/GatorDB/src/common/rid.h \
   /Users/gator/C++/Project/GatorDB/src/common/statement.h \
@@ -1627,16 +1747,19 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -1665,6 +1788,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -2222,8 +2346,10 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
@@ -2244,6 +2370,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
@@ -2265,6 +2392,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -2288,6 +2416,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
@@ -2331,6 +2460,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h \
@@ -2368,6 +2498,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h \
@@ -2379,6 +2510,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_char.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h \
@@ -2390,6 +2522,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h \
@@ -2398,10 +2531,13 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
@@ -2431,11 +2567,115 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_acle.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  _deps/absl-src/absl/algorithm/algorithm.h \
+  _deps/absl-src/absl/base/attributes.h \
+  _deps/absl-src/absl/base/call_once.h \
+  _deps/absl-src/absl/base/casts.h \
+  _deps/absl-src/absl/base/config.h \
+  _deps/absl-src/absl/base/const_init.h \
+  _deps/absl-src/absl/base/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/atomic_hook.h \
+  _deps/absl-src/absl/base/internal/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/endian.h \
+  _deps/absl-src/absl/base/internal/identity.h \
+  _deps/absl-src/absl/base/internal/inline_variable.h \
+  _deps/absl-src/absl/base/internal/invoke.h \
+  _deps/absl-src/absl/base/internal/low_level_alloc.h \
+  _deps/absl-src/absl/base/internal/low_level_scheduling.h \
+  _deps/absl-src/absl/base/internal/nullability_impl.h \
+  _deps/absl-src/absl/base/internal/per_thread_tls.h \
+  _deps/absl-src/absl/base/internal/raw_logging.h \
+  _deps/absl-src/absl/base/internal/scheduling_mode.h \
+  _deps/absl-src/absl/base/internal/spinlock.h \
+  _deps/absl-src/absl/base/internal/spinlock_wait.h \
+  _deps/absl-src/absl/base/internal/thread_identity.h \
+  _deps/absl-src/absl/base/internal/throw_delegate.h \
+  _deps/absl-src/absl/base/internal/tsan_mutex_interface.h \
+  _deps/absl-src/absl/base/internal/unaligned_access.h \
+  _deps/absl-src/absl/base/log_severity.h \
+  _deps/absl-src/absl/base/macros.h \
+  _deps/absl-src/absl/base/nullability.h \
+  _deps/absl-src/absl/base/optimization.h \
+  _deps/absl-src/absl/base/options.h \
+  _deps/absl-src/absl/base/policy_checks.h \
+  _deps/absl-src/absl/base/port.h \
+  _deps/absl-src/absl/base/thread_annotations.h \
+  _deps/absl-src/absl/container/inlined_vector.h \
+  _deps/absl-src/absl/container/internal/compressed_tuple.h \
+  _deps/absl-src/absl/container/internal/container_memory.h \
+  _deps/absl-src/absl/container/internal/inlined_vector.h \
+  _deps/absl-src/absl/crc/crc32c.h \
+  _deps/absl-src/absl/crc/internal/crc32_x86_arm_combined_simd.h \
+  _deps/absl-src/absl/crc/internal/crc32c_inline.h \
+  _deps/absl-src/absl/crc/internal/crc_cord_state.h \
+  _deps/absl-src/absl/functional/any_invocable.h \
+  _deps/absl-src/absl/functional/function_ref.h \
+  _deps/absl-src/absl/functional/internal/any_invocable.h \
+  _deps/absl-src/absl/functional/internal/function_ref.h \
+  _deps/absl-src/absl/memory/memory.h \
+  _deps/absl-src/absl/meta/type_traits.h \
+  _deps/absl-src/absl/numeric/bits.h \
+  _deps/absl-src/absl/numeric/int128.h \
+  _deps/absl-src/absl/numeric/int128_have_intrinsic.inc \
+  _deps/absl-src/absl/numeric/internal/bits.h \
+  _deps/absl-src/absl/status/internal/status_internal.h \
+  _deps/absl-src/absl/status/internal/statusor_internal.h \
+  _deps/absl-src/absl/status/status.h \
+  _deps/absl-src/absl/status/statusor.h \
+  _deps/absl-src/absl/strings/cord.h \
+  _deps/absl-src/absl/strings/cord_analysis.h \
+  _deps/absl-src/absl/strings/cord_buffer.h \
+  _deps/absl-src/absl/strings/has_absl_stringify.h \
+  _deps/absl-src/absl/strings/has_ostream_operator.h \
+  _deps/absl-src/absl/strings/internal/cord_data_edge.h \
+  _deps/absl-src/absl/strings/internal/cord_internal.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_navigator.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_reader.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_crc.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_flat.h \
+  _deps/absl-src/absl/strings/internal/cordz_functions.h \
+  _deps/absl-src/absl/strings/internal/cordz_handle.h \
+  _deps/absl-src/absl/strings/internal/cordz_info.h \
+  _deps/absl-src/absl/strings/internal/cordz_statistics.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_scope.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_tracker.h \
+  _deps/absl-src/absl/strings/internal/resize_uninitialized.h \
+  _deps/absl-src/absl/strings/internal/str_format/arg.h \
+  _deps/absl-src/absl/strings/internal/str_format/bind.h \
+  _deps/absl-src/absl/strings/internal/str_format/checker.h \
+  _deps/absl-src/absl/strings/internal/str_format/constexpr_parser.h \
+  _deps/absl-src/absl/strings/internal/str_format/extension.h \
+  _deps/absl-src/absl/strings/internal/str_format/output.h \
+  _deps/absl-src/absl/strings/internal/str_format/parser.h \
+  _deps/absl-src/absl/strings/internal/string_constant.h \
+  _deps/absl-src/absl/strings/str_format.h \
+  _deps/absl-src/absl/strings/string_view.h \
+  _deps/absl-src/absl/synchronization/internal/create_thread_identity.h \
+  _deps/absl-src/absl/synchronization/internal/kernel_timeout.h \
+  _deps/absl-src/absl/synchronization/internal/per_thread_sem.h \
+  _deps/absl-src/absl/synchronization/mutex.h \
+  _deps/absl-src/absl/time/civil_time.h \
+  _deps/absl-src/absl/time/clock.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/time_zone.h \
+  _deps/absl-src/absl/time/time.h \
+  _deps/absl-src/absl/types/compare.h \
+  _deps/absl-src/absl/types/internal/span.h \
+  _deps/absl-src/absl/types/optional.h \
+  _deps/absl-src/absl/types/span.h \
+  _deps/absl-src/absl/types/variant.h \
+  _deps/absl-src/absl/utility/utility.h \
   /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Users/gator/C++/Project/GatorDB/src/common/rid.h \
   /Users/gator/C++/Project/GatorDB/src/common/statement.h \
@@ -3266,16 +3506,19 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -3304,6 +3547,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -3861,8 +4105,10 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
@@ -3883,6 +4129,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
@@ -3904,6 +4151,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -3927,6 +4175,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
@@ -3970,6 +4219,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h \
@@ -4007,6 +4257,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h \
@@ -4018,6 +4269,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_char.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h \
@@ -4029,6 +4281,7 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h \
@@ -4037,10 +4290,13 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
@@ -4070,11 +4326,115 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: /Users/gator/C++/Project/GatorD
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_acle.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  _deps/absl-src/absl/algorithm/algorithm.h \
+  _deps/absl-src/absl/base/attributes.h \
+  _deps/absl-src/absl/base/call_once.h \
+  _deps/absl-src/absl/base/casts.h \
+  _deps/absl-src/absl/base/config.h \
+  _deps/absl-src/absl/base/const_init.h \
+  _deps/absl-src/absl/base/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/atomic_hook.h \
+  _deps/absl-src/absl/base/internal/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/endian.h \
+  _deps/absl-src/absl/base/internal/identity.h \
+  _deps/absl-src/absl/base/internal/inline_variable.h \
+  _deps/absl-src/absl/base/internal/invoke.h \
+  _deps/absl-src/absl/base/internal/low_level_alloc.h \
+  _deps/absl-src/absl/base/internal/low_level_scheduling.h \
+  _deps/absl-src/absl/base/internal/nullability_impl.h \
+  _deps/absl-src/absl/base/internal/per_thread_tls.h \
+  _deps/absl-src/absl/base/internal/raw_logging.h \
+  _deps/absl-src/absl/base/internal/scheduling_mode.h \
+  _deps/absl-src/absl/base/internal/spinlock.h \
+  _deps/absl-src/absl/base/internal/spinlock_wait.h \
+  _deps/absl-src/absl/base/internal/thread_identity.h \
+  _deps/absl-src/absl/base/internal/throw_delegate.h \
+  _deps/absl-src/absl/base/internal/tsan_mutex_interface.h \
+  _deps/absl-src/absl/base/internal/unaligned_access.h \
+  _deps/absl-src/absl/base/log_severity.h \
+  _deps/absl-src/absl/base/macros.h \
+  _deps/absl-src/absl/base/nullability.h \
+  _deps/absl-src/absl/base/optimization.h \
+  _deps/absl-src/absl/base/options.h \
+  _deps/absl-src/absl/base/policy_checks.h \
+  _deps/absl-src/absl/base/port.h \
+  _deps/absl-src/absl/base/thread_annotations.h \
+  _deps/absl-src/absl/container/inlined_vector.h \
+  _deps/absl-src/absl/container/internal/compressed_tuple.h \
+  _deps/absl-src/absl/container/internal/container_memory.h \
+  _deps/absl-src/absl/container/internal/inlined_vector.h \
+  _deps/absl-src/absl/crc/crc32c.h \
+  _deps/absl-src/absl/crc/internal/crc32_x86_arm_combined_simd.h \
+  _deps/absl-src/absl/crc/internal/crc32c_inline.h \
+  _deps/absl-src/absl/crc/internal/crc_cord_state.h \
+  _deps/absl-src/absl/functional/any_invocable.h \
+  _deps/absl-src/absl/functional/function_ref.h \
+  _deps/absl-src/absl/functional/internal/any_invocable.h \
+  _deps/absl-src/absl/functional/internal/function_ref.h \
+  _deps/absl-src/absl/memory/memory.h \
+  _deps/absl-src/absl/meta/type_traits.h \
+  _deps/absl-src/absl/numeric/bits.h \
+  _deps/absl-src/absl/numeric/int128.h \
+  _deps/absl-src/absl/numeric/int128_have_intrinsic.inc \
+  _deps/absl-src/absl/numeric/internal/bits.h \
+  _deps/absl-src/absl/status/internal/status_internal.h \
+  _deps/absl-src/absl/status/internal/statusor_internal.h \
+  _deps/absl-src/absl/status/status.h \
+  _deps/absl-src/absl/status/statusor.h \
+  _deps/absl-src/absl/strings/cord.h \
+  _deps/absl-src/absl/strings/cord_analysis.h \
+  _deps/absl-src/absl/strings/cord_buffer.h \
+  _deps/absl-src/absl/strings/has_absl_stringify.h \
+  _deps/absl-src/absl/strings/has_ostream_operator.h \
+  _deps/absl-src/absl/strings/internal/cord_data_edge.h \
+  _deps/absl-src/absl/strings/internal/cord_internal.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_navigator.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_reader.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_crc.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_flat.h \
+  _deps/absl-src/absl/strings/internal/cordz_functions.h \
+  _deps/absl-src/absl/strings/internal/cordz_handle.h \
+  _deps/absl-src/absl/strings/internal/cordz_info.h \
+  _deps/absl-src/absl/strings/internal/cordz_statistics.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_scope.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_tracker.h \
+  _deps/absl-src/absl/strings/internal/resize_uninitialized.h \
+  _deps/absl-src/absl/strings/internal/str_format/arg.h \
+  _deps/absl-src/absl/strings/internal/str_format/bind.h \
+  _deps/absl-src/absl/strings/internal/str_format/checker.h \
+  _deps/absl-src/absl/strings/internal/str_format/constexpr_parser.h \
+  _deps/absl-src/absl/strings/internal/str_format/extension.h \
+  _deps/absl-src/absl/strings/internal/str_format/output.h \
+  _deps/absl-src/absl/strings/internal/str_format/parser.h \
+  _deps/absl-src/absl/strings/internal/string_constant.h \
+  _deps/absl-src/absl/strings/str_format.h \
+  _deps/absl-src/absl/strings/string_view.h \
+  _deps/absl-src/absl/synchronization/internal/create_thread_identity.h \
+  _deps/absl-src/absl/synchronization/internal/kernel_timeout.h \
+  _deps/absl-src/absl/synchronization/internal/per_thread_sem.h \
+  _deps/absl-src/absl/synchronization/mutex.h \
+  _deps/absl-src/absl/time/civil_time.h \
+  _deps/absl-src/absl/time/clock.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/time_zone.h \
+  _deps/absl-src/absl/time/time.h \
+  _deps/absl-src/absl/types/compare.h \
+  _deps/absl-src/absl/types/internal/span.h \
+  _deps/absl-src/absl/types/optional.h \
+  _deps/absl-src/absl/types/span.h \
+  _deps/absl-src/absl/types/variant.h \
+  _deps/absl-src/absl/utility/utility.h \
   /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Users/gator/C++/Project/GatorDB/src/common/rid.h \
   /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h \
@@ -4086,16 +4446,19 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h \
@@ -4124,6 +4487,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -4681,8 +5045,10 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
@@ -4703,6 +5069,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
@@ -4724,6 +5091,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -4747,6 +5115,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/_OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/limits.h \
@@ -4790,6 +5159,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h \
@@ -4827,6 +5197,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h \
@@ -4838,6 +5209,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_char.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h \
@@ -4849,6 +5221,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h \
@@ -4857,10 +5230,13 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/select.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
@@ -4890,11 +5266,115 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_size_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_acle.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  _deps/absl-src/absl/algorithm/algorithm.h \
+  _deps/absl-src/absl/base/attributes.h \
+  _deps/absl-src/absl/base/call_once.h \
+  _deps/absl-src/absl/base/casts.h \
+  _deps/absl-src/absl/base/config.h \
+  _deps/absl-src/absl/base/const_init.h \
+  _deps/absl-src/absl/base/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/atomic_hook.h \
+  _deps/absl-src/absl/base/internal/dynamic_annotations.h \
+  _deps/absl-src/absl/base/internal/endian.h \
+  _deps/absl-src/absl/base/internal/identity.h \
+  _deps/absl-src/absl/base/internal/inline_variable.h \
+  _deps/absl-src/absl/base/internal/invoke.h \
+  _deps/absl-src/absl/base/internal/low_level_alloc.h \
+  _deps/absl-src/absl/base/internal/low_level_scheduling.h \
+  _deps/absl-src/absl/base/internal/nullability_impl.h \
+  _deps/absl-src/absl/base/internal/per_thread_tls.h \
+  _deps/absl-src/absl/base/internal/raw_logging.h \
+  _deps/absl-src/absl/base/internal/scheduling_mode.h \
+  _deps/absl-src/absl/base/internal/spinlock.h \
+  _deps/absl-src/absl/base/internal/spinlock_wait.h \
+  _deps/absl-src/absl/base/internal/thread_identity.h \
+  _deps/absl-src/absl/base/internal/throw_delegate.h \
+  _deps/absl-src/absl/base/internal/tsan_mutex_interface.h \
+  _deps/absl-src/absl/base/internal/unaligned_access.h \
+  _deps/absl-src/absl/base/log_severity.h \
+  _deps/absl-src/absl/base/macros.h \
+  _deps/absl-src/absl/base/nullability.h \
+  _deps/absl-src/absl/base/optimization.h \
+  _deps/absl-src/absl/base/options.h \
+  _deps/absl-src/absl/base/policy_checks.h \
+  _deps/absl-src/absl/base/port.h \
+  _deps/absl-src/absl/base/thread_annotations.h \
+  _deps/absl-src/absl/container/inlined_vector.h \
+  _deps/absl-src/absl/container/internal/compressed_tuple.h \
+  _deps/absl-src/absl/container/internal/container_memory.h \
+  _deps/absl-src/absl/container/internal/inlined_vector.h \
+  _deps/absl-src/absl/crc/crc32c.h \
+  _deps/absl-src/absl/crc/internal/crc32_x86_arm_combined_simd.h \
+  _deps/absl-src/absl/crc/internal/crc32c_inline.h \
+  _deps/absl-src/absl/crc/internal/crc_cord_state.h \
+  _deps/absl-src/absl/functional/any_invocable.h \
+  _deps/absl-src/absl/functional/function_ref.h \
+  _deps/absl-src/absl/functional/internal/any_invocable.h \
+  _deps/absl-src/absl/functional/internal/function_ref.h \
+  _deps/absl-src/absl/memory/memory.h \
+  _deps/absl-src/absl/meta/type_traits.h \
+  _deps/absl-src/absl/numeric/bits.h \
+  _deps/absl-src/absl/numeric/int128.h \
+  _deps/absl-src/absl/numeric/int128_have_intrinsic.inc \
+  _deps/absl-src/absl/numeric/internal/bits.h \
+  _deps/absl-src/absl/status/internal/status_internal.h \
+  _deps/absl-src/absl/status/internal/statusor_internal.h \
+  _deps/absl-src/absl/status/status.h \
+  _deps/absl-src/absl/status/statusor.h \
+  _deps/absl-src/absl/strings/cord.h \
+  _deps/absl-src/absl/strings/cord_analysis.h \
+  _deps/absl-src/absl/strings/cord_buffer.h \
+  _deps/absl-src/absl/strings/has_absl_stringify.h \
+  _deps/absl-src/absl/strings/has_ostream_operator.h \
+  _deps/absl-src/absl/strings/internal/cord_data_edge.h \
+  _deps/absl-src/absl/strings/internal/cord_internal.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_navigator.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_btree_reader.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_crc.h \
+  _deps/absl-src/absl/strings/internal/cord_rep_flat.h \
+  _deps/absl-src/absl/strings/internal/cordz_functions.h \
+  _deps/absl-src/absl/strings/internal/cordz_handle.h \
+  _deps/absl-src/absl/strings/internal/cordz_info.h \
+  _deps/absl-src/absl/strings/internal/cordz_statistics.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_scope.h \
+  _deps/absl-src/absl/strings/internal/cordz_update_tracker.h \
+  _deps/absl-src/absl/strings/internal/resize_uninitialized.h \
+  _deps/absl-src/absl/strings/internal/str_format/arg.h \
+  _deps/absl-src/absl/strings/internal/str_format/bind.h \
+  _deps/absl-src/absl/strings/internal/str_format/checker.h \
+  _deps/absl-src/absl/strings/internal/str_format/constexpr_parser.h \
+  _deps/absl-src/absl/strings/internal/str_format/extension.h \
+  _deps/absl-src/absl/strings/internal/str_format/output.h \
+  _deps/absl-src/absl/strings/internal/str_format/parser.h \
+  _deps/absl-src/absl/strings/internal/string_constant.h \
+  _deps/absl-src/absl/strings/str_format.h \
+  _deps/absl-src/absl/strings/string_view.h \
+  _deps/absl-src/absl/synchronization/internal/create_thread_identity.h \
+  _deps/absl-src/absl/synchronization/internal/kernel_timeout.h \
+  _deps/absl-src/absl/synchronization/internal/per_thread_sem.h \
+  _deps/absl-src/absl/synchronization/mutex.h \
+  _deps/absl-src/absl/time/civil_time.h \
+  _deps/absl-src/absl/time/clock.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time_detail.h \
+  _deps/absl-src/absl/time/internal/cctz/include/cctz/time_zone.h \
+  _deps/absl-src/absl/time/time.h \
+  _deps/absl-src/absl/types/compare.h \
+  _deps/absl-src/absl/types/internal/span.h \
+  _deps/absl-src/absl/types/optional.h \
+  _deps/absl-src/absl/types/span.h \
+  _deps/absl-src/absl/types/variant.h \
+  _deps/absl-src/absl/utility/utility.h \
   /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Users/gator/C++/Project/GatorDB/src/common/rid.h \
   /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h \
@@ -4914,6 +5394,130 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Users/gator/C++/Project/GatorDB/src/executer.h:
 
+_deps/absl-src/absl/types/variant.h:
+
+_deps/absl-src/absl/types/optional.h:
+
+_deps/absl-src/absl/time/internal/cctz/include/cctz/time_zone.h:
+
+_deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time_detail.h:
+
+_deps/absl-src/absl/time/clock.h:
+
+_deps/absl-src/absl/synchronization/mutex.h:
+
+_deps/absl-src/absl/synchronization/internal/per_thread_sem.h:
+
+_deps/absl-src/absl/synchronization/internal/kernel_timeout.h:
+
+_deps/absl-src/absl/synchronization/internal/create_thread_identity.h:
+
+_deps/absl-src/absl/strings/internal/str_format/parser.h:
+
+_deps/absl-src/absl/strings/internal/str_format/extension.h:
+
+_deps/absl-src/absl/strings/internal/str_format/checker.h:
+
+_deps/absl-src/absl/strings/internal/str_format/arg.h:
+
+_deps/absl-src/absl/strings/internal/resize_uninitialized.h:
+
+_deps/absl-src/absl/strings/internal/cordz_update_tracker.h:
+
+_deps/absl-src/absl/strings/internal/cordz_statistics.h:
+
+_deps/absl-src/absl/strings/internal/cordz_info.h:
+
+_deps/absl-src/absl/strings/internal/cordz_handle.h:
+
+_deps/absl-src/absl/strings/internal/cordz_functions.h:
+
+_deps/absl-src/absl/strings/internal/cord_rep_flat.h:
+
+_deps/absl-src/absl/strings/internal/cord_rep_btree_reader.h:
+
+_deps/absl-src/absl/strings/internal/cord_rep_btree_navigator.h:
+
+_deps/absl-src/absl/strings/internal/cord_rep_btree.h:
+
+_deps/absl-src/absl/strings/internal/cord_internal.h:
+
+_deps/absl-src/absl/strings/has_ostream_operator.h:
+
+_deps/absl-src/absl/strings/cord_buffer.h:
+
+_deps/absl-src/absl/strings/cord.h:
+
+_deps/absl-src/absl/status/status.h:
+
+_deps/absl-src/absl/status/internal/status_internal.h:
+
+_deps/absl-src/absl/numeric/internal/bits.h:
+
+_deps/absl-src/absl/numeric/int128.h:
+
+_deps/absl-src/absl/meta/type_traits.h:
+
+_deps/absl-src/absl/functional/function_ref.h:
+
+_deps/absl-src/absl/crc/internal/crc_cord_state.h:
+
+_deps/absl-src/absl/crc/internal/crc32c_inline.h:
+
+_deps/absl-src/absl/crc/crc32c.h:
+
+_deps/absl-src/absl/container/internal/inlined_vector.h:
+
+_deps/absl-src/absl/container/internal/compressed_tuple.h:
+
+_deps/absl-src/absl/base/thread_annotations.h:
+
+_deps/absl-src/absl/strings/str_format.h:
+
+_deps/absl-src/absl/base/port.h:
+
+_deps/absl-src/absl/base/policy_checks.h:
+
+_deps/absl-src/absl/base/options.h:
+
+_deps/absl-src/absl/base/optimization.h:
+
+_deps/absl-src/absl/base/internal/tsan_mutex_interface.h:
+
+_deps/absl-src/absl/base/internal/throw_delegate.h:
+
+_deps/absl-src/absl/base/internal/thread_identity.h:
+
+_deps/absl-src/absl/base/internal/scheduling_mode.h:
+
+_deps/absl-src/absl/base/internal/raw_logging.h:
+
+_deps/absl-src/absl/base/internal/per_thread_tls.h:
+
+_deps/absl-src/absl/base/internal/nullability_impl.h:
+
+_deps/absl-src/absl/base/internal/low_level_scheduling.h:
+
+_deps/absl-src/absl/base/internal/low_level_alloc.h:
+
+_deps/absl-src/absl/base/internal/invoke.h:
+
+_deps/absl-src/absl/base/internal/inline_variable.h:
+
+_deps/absl-src/absl/base/internal/endian.h:
+
+_deps/absl-src/absl/base/internal/atomic_hook.h:
+
+_deps/absl-src/absl/base/const_init.h:
+
+_deps/absl-src/absl/base/internal/unaligned_access.h:
+
+_deps/absl-src/absl/base/casts.h:
+
+_deps/absl-src/absl/base/attributes.h:
+
+_deps/absl-src/absl/algorithm/algorithm.h:
+
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h:
@@ -4921,6 +5525,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/ptrcheck.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/limits.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_vector_types.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h:
 
@@ -4934,27 +5540,37 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cwctype:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___va_copy.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_valid_range.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wchar.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h:
+_deps/absl-src/absl/status/statusor.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_in_out_result.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/unistd.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/errno.h:
 
@@ -4970,9 +5586,15 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h:
+
+_deps/absl-src/absl/base/nullability.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_bf16.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_addr_t.h:
 
@@ -4983,6 +5605,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ucontext.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h:
+
+_deps/absl-src/absl/strings/internal/str_format/bind.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/memory.h:
 
@@ -5004,11 +5628,17 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h:
 
+_deps/absl-src/absl/time/time.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigaltstack.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rsize_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h:
 
@@ -5034,8 +5664,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_id_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
@@ -5052,6 +5680,10 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
@@ -5065,6 +5697,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/__endian.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blkcnt_t.h:
+
+_deps/absl-src/absl/strings/has_absl_stringify.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h:
 
@@ -5093,10 +5727,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/exponential_functions.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version:
 
@@ -5136,13 +5766,13 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h:
+
+_deps/absl-src/absl/numeric/bits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept:
 
@@ -5160,9 +5790,17 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale.h:
 
+_deps/absl-src/absl/container/internal/container_memory.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/select.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd:
+
+_deps/absl-src/absl/types/compare.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unwrap_range.h:
 
@@ -5174,7 +5812,19 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___va_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cwctype:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h:
 
@@ -5194,9 +5844,9 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit:
 
 /Users/gator/C++/Project/GatorDB/src/common/rid.h:
 
@@ -5224,9 +5874,9 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
 
@@ -5253,8 +5903,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle:
 
@@ -5348,6 +5996,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mach_port_t.h:
 
+_deps/absl-src/absl/base/internal/spinlock.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/regular.h:
@@ -5370,8 +6020,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_fundamental.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/time.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
@@ -5385,6 +6033,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_floating_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
+
+_deps/absl-src/absl/numeric/int128_have_intrinsic.inc:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int.h:
 
@@ -5400,7 +6050,13 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg:
 
+_deps/absl-src/absl/base/dynamic_annotations.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_const.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wchar.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/is_valid_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/byte.h:
 
@@ -5424,17 +6080,9 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/invoke.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_heap.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/extent.h:
+
+_deps/absl-src/absl/strings/string_view.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/enable_if.h:
 
@@ -5448,15 +6096,13 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/disjunction.h:
 
+_deps/absl-src/absl/strings/internal/str_format/output.h:
+
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg_header_macro.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/desugars_to.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_const.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
 
@@ -5467,6 +6113,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conditional.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
 
@@ -5480,11 +6128,15 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_acle.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_storage.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_volatile.h:
+
+_deps/absl-src/absl/base/internal/dynamic_annotations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
 
@@ -5500,13 +6152,21 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/decay.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/add_const.h:
+
 /Users/gator/C++/Project/GatorDB/src/storage/pager.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque:
 
+_deps/absl-src/absl/time/internal/cctz/include/cctz/civil_time.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_like_no_subrange.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h:
 
@@ -5610,6 +6270,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:
@@ -5632,15 +6294,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/out_ptr.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/ranges_construct_at.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_key_t.h:
 
@@ -5666,9 +6320,9 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/remainder.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
 
@@ -5696,9 +6350,15 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fdim.h:
 
+_deps/absl-src/absl/crc/internal/crc32_x86_arm_combined_simd.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/vector.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/exponential_functions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h:
 
@@ -5718,6 +6378,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
+_deps/absl-src/absl/strings/internal/string_constant.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_permutation.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
@@ -5725,8 +6387,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/clamp.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_port_t.h:
 
@@ -5755,6 +6415,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
+
+_deps/absl-src/absl/container/inlined_vector.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:
 
@@ -5854,6 +6516,10 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/ranges_operations.h:
 
+_deps/absl-src/absl/status/internal/statusor_internal.h:
+
+_deps/absl-src/absl/base/internal/identity.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_locale.h:
@@ -5873,6 +6539,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/addressof.h:
+
+_deps/absl-src/absl/types/span.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_implicitly_default_constructible.h:
 
@@ -5906,6 +6574,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_output.h:
 
+_deps/absl-src/absl/types/internal/span.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/deque.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integral.h:
@@ -5914,13 +6584,19 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_error.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_heap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h:
 
@@ -5946,11 +6622,17 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
+
+_deps/absl-src/absl/time/civil_time.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory:
 
@@ -5961,6 +6643,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/size.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
+
+_deps/absl-src/absl/functional/any_invocable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace_copy_if.h:
 
@@ -6040,6 +6724,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/different_from.h:
 
+_deps/absl-src/absl/base/config.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_mcontext.h:
@@ -6058,17 +6744,19 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/count_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_function.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/move.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef:
 
@@ -6090,11 +6778,11 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/is_always_lock_free.h:
 
+_deps/absl-src/absl/strings/internal/cord_rep_crc.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/popcount.h:
 
@@ -6117,18 +6805,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/trigonometric_functions.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/private_constructor_tag.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort_copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
 
@@ -6172,11 +6848,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
+_deps/absl-src/absl/strings/cord_analysis.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale:
 
@@ -6192,11 +6864,11 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ostream/basic_ostream.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h:
+
+_deps/absl-src/absl/strings/internal/cordz_update_scope.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_union.h:
 
@@ -6209,6 +6881,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timespec.h:
+
+_deps/absl-src/absl/utility/utility.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/compressed_pair.h:
 
@@ -6226,6 +6900,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countl.h:
 
+_deps/absl-src/absl/base/macros.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_blksize_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h:
@@ -6235,6 +6911,8 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
+
+_deps/absl-src/absl/functional/internal/function_ref.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h:
 
@@ -6252,8 +6930,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h:
@@ -6267,6 +6943,10 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_def.h:
 
@@ -6282,6 +6962,16 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/out_ptr.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
@@ -6294,7 +6984,9 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/destruct_n.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ctype.h:
 
@@ -6314,27 +7006,25 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/in_in_out_result.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
+
+_deps/absl-src/absl/base/internal/spinlock_wait.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ostream_iterator.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__configuration/abi.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/copysign.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ostream_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/reference_wrapper.h:
+
+_deps/absl-src/absl/strings/internal/cord_data_edge.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_strings.h:
 
@@ -6344,21 +7034,9 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/bounded_iter.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min_element.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/ordering.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/gethostuuid.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_specialization.h:
 
@@ -6372,13 +7050,29 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/locale.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wint_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/nullptr_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/copysign.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/bounded_iter.h:
+
+_deps/absl-src/absl/strings/internal/str_format/constexpr_parser.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/min_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/inplace_merge.h:
 
@@ -6390,6 +7084,10 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Users/gator/C++/Project/GatorDB/main.cpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/locale.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:
@@ -6397,8 +7095,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/ranges_construct_at.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_if_not.h:
 
@@ -6434,8 +7130,6 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/swap.h:
@@ -6448,13 +7142,15 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/advance.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/syslimits.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_xlocale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
 
+_deps/absl-src/absl/memory/memory.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h:
+
+_deps/absl-src/absl/functional/internal/any_invocable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/empty.h:
 
@@ -6470,9 +7166,11 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/signal.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:
 
@@ -6498,6 +7196,10 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_wctype_t.h:
 
+_deps/absl-src/absl/base/log_severity.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
@@ -6516,15 +7218,21 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h:
 
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/arm_neon.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fd_zero.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/lazy.h:
 
@@ -6536,11 +7244,7 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
 
@@ -6548,10 +7252,24 @@ CMakeFiles/gator_db.dir/src/storage/table_page.cpp.o: /Users/gator/C++/Project/G
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_limits.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/private_constructor_tag.h:
+
+_deps/absl-src/absl/base/call_once.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/prev_permutation.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_bounds.h:

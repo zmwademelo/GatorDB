@@ -1,0 +1,86 @@
+{
+	"abstract" : true,
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"absl_cc_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"build/_deps/absl-src/CMake/AbseilHelpers.cmake",
+			"build/_deps/absl-src/absl/random/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 321,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 332,
+				"parent" : 1
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "random_internal_mock_helpers::@2b5b7155e9709f7cf443",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "config::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "fast_type_id::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "optional::@dfc2a011de82b23b908b"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "config::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "fast_type_id::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "optional::@dfc2a011de82b23b908b"
+		}
+	],
+	"name" : "random_internal_mock_helpers",
+	"paths" : 
+	{
+		"build" : "_deps/absl-build/absl/random",
+		"source" : "build/_deps/absl-src/absl/random"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

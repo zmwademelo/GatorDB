@@ -1,0 +1,118 @@
+{
+	"abstract" : true,
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"absl_cc_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"build/_deps/absl-src/CMake/AbseilHelpers.cmake",
+			"build/_deps/absl-src/absl/container/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 819,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 321,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 332,
+				"parent" : 1
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "layout::@de4a077cf7bddfa60d24",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "config::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "core_headers::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "debugging_internal::@0cafaefae639f69ed03c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "meta::@e6128134e8e9a760f798"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "strings::@84bb1f0d63118b72008e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "span::@dfc2a011de82b23b908b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "utility::@d4b871060bb72f1611c2"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "config::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "core_headers::@289ef7ed9ae6f7208b42"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "debugging_internal::@0cafaefae639f69ed03c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "meta::@e6128134e8e9a760f798"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "strings::@84bb1f0d63118b72008e"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "span::@dfc2a011de82b23b908b"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "utility::@d4b871060bb72f1611c2"
+		}
+	],
+	"name" : "layout",
+	"paths" : 
+	{
+		"build" : "_deps/absl-build/absl/container",
+		"source" : "build/_deps/absl-src/absl/container"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

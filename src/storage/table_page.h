@@ -4,6 +4,8 @@
 #include "common/rid.h"
 #include <string>
 #include <iostream>
+#include <memory>
+#include "absl/status/statusor.h"
 
 /*
 The Physical Memory Layout
@@ -20,6 +22,7 @@ End of Page: The actual record data.
 
 class TablePage {
     friend class Pager; //Pager needs to access the private members of TablePage to manage page-level metadata and operations effectively.
+    friend class Executer; 
     public:
         struct PageHeader {
             uint32_t magic_number; 
@@ -49,22 +52,39 @@ class TablePage {
             return get_page_header()->slot_count; 
         
         }
-        Slot* get_slot(uint16_t slot_num) {
+
+       // 3. StatusOr should return a pointer or a copy, not a unique_ptr
+       /*
+        absl::StatusOr<Slot*> get_slot(uint16_t slot_num) {
             if (slot_num >= get_slot_count()) {
-                return nullptr; 
-            }
+            return absl::Status(absl::StatusCode::kOutOfRange, "Invalid slot number"); 
+        }
             return &get_slot_directory()[slot_num]; 
         }
+        */
+       Slot* get_slot(uint16_t slot_num) {
+            if (slot_num >= get_slot_count()) {
+                return nullptr;
+            }
+            return &get_slot_directory()[slot_num]; 
+       }
     private: 
-        PageHeader* get_page_header(){
-            return reinterpret_cast<PageHeader*>(data_); //reinterpret_cast is used to convert the raw byte data into a structured format that we can work with. 
+        //PageHeader* get_page_header(){
+        PageHeader* get_page_header() {
+            //return reinterpret_cast<PageHeader*>(data_); //reinterpret_cast is used to convert the raw byte data into a structured format that we can work with. 
+            return reinterpret_cast<PageHeader*>(data_);
             //It allows us to treat the first few bytes of the page as a PageHeader, giving us easy access to the metadata about the page.
         }
-        Slot* get_slot_directory(){
-            return reinterpret_cast<Slot*>(data_ + sizeof(PageHeader)); //This points to the start of the slot directory, which is located immediately after the page header in the page's byte layout. 
+    
+        //Slot* get_slot_directory(){
+        Slot* get_slot_directory() {
+            return reinterpret_cast<Slot*>(data_ + sizeof(PageHeader));
+            //return reinterpret_cast<Slot*>(data_ + sizeof(PageHeader)); 
+            //This points to the start of the slot directory, which is located immediately after the page header in the page's byte layout. 
             //By using reinterpret_cast, we can treat this portion of the page as an array of Slot structures, allowing us to easily manage and access the slot information for each record stored in the page. 
             //Because every Slot is the same size (4 bytes in this example), the compiler can calculate exactly where slots[i] is by doing: Start_Address + (i * sizeof(Slot)). 
         }
         char* data_; // The actual 4KB buffer
+        //std::unique_ptr<char[]> data;  
         //We can get the slot_count by 
 };

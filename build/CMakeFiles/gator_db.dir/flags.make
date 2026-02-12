@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/gator/C++/Project/GatorDB/src
+CXX_INCLUDES = -I/Users/gator/C++/Project/GatorDB/src -I/Users/gator/C++/Project/GatorDB/build/_deps/absl-src
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
 
