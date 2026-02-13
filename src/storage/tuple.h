@@ -1,9 +1,13 @@
 #pragma once
+
+#include "storage/schema.h"
+
 #include <vector>
 #include <string>
 
 class Tuple {
     public: 
+    /** Player Exclusive 
     struct Player {
         std::string name;
         uint16_t yob; 
@@ -55,5 +59,7 @@ class Tuple {
         return player; 
 
     }
-        
+        **/
+    static std::vector<char> serialize(const Schema& schema, const std::vector<std::string>& values);
+    static std::vector<std::string> deserialize(const Schema& schema, const std::string& raw_bytes);
 }; 

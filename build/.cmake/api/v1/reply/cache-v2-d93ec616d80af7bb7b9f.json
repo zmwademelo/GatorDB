@@ -2079,7 +2079,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Mings-Mac-mini.local"
+			"value" : "Mac"
 		},
 		{
 			"name" : "SVNCOMMAND",

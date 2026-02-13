@@ -60,11 +60,11 @@ bool TablePage::delete_record(uint16_t slot_num) {
     if (slot == nullptr || slot->length < 0) { // Invalid slot number or already deleted
         return false;
     }
-    /*
-    auto slot = *std::move(result);
+    
+    //auto slot = *std::move(result);
     slot->length = -slot->length; // Mark the slot as deleted by negating the length
-    */
-    //TBD
+    
+    //TBD This does not work cuz get_available_page uses free space to determine if a new page is needed. The block needs to be continuous. 
     //header->free_space += (-slot->length); // Increase free space by the size of the deleted record
     
     return true;

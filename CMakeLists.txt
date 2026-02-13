@@ -30,7 +30,17 @@ FetchContent_MakeAvailable(absl)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 # 2. Second, define the executable
-add_executable(gator_db "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp" ${SOURCES})
+#add_executable(gator_db "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp" ${SOURCES})
+add_executable(gator_db
+    main.cpp
+    src/executer.cpp
+    src/storage/disk_manager.cpp
+    src/storage/pager.cpp
+    src/storage/table_page.cpp
+    src/storage/tuple.cpp    # <--- Is this here?
+    src/storage/schema.cpp   # <--- Is this here?
+    src/common/statement.cpp
+)
 
 # 3. Third, apply settings TO that executable
 target_include_directories(gator_db PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

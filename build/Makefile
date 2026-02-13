@@ -1828,6 +1828,30 @@ src/storage/pager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/pager.cpp.s
 .PHONY : src/storage/pager.cpp.s
 
+src/storage/schema.o: src/storage/schema.cpp.o
+.PHONY : src/storage/schema.o
+
+# target to build an object file
+src/storage/schema.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/schema.cpp.o
+.PHONY : src/storage/schema.cpp.o
+
+src/storage/schema.i: src/storage/schema.cpp.i
+.PHONY : src/storage/schema.i
+
+# target to preprocess a source file
+src/storage/schema.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/schema.cpp.i
+.PHONY : src/storage/schema.cpp.i
+
+src/storage/schema.s: src/storage/schema.cpp.s
+.PHONY : src/storage/schema.s
+
+# target to generate assembly for a file
+src/storage/schema.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/schema.cpp.s
+.PHONY : src/storage/schema.cpp.s
+
 src/storage/table_page.o: src/storage/table_page.cpp.o
 .PHONY : src/storage/table_page.o
 
@@ -1851,6 +1875,30 @@ src/storage/table_page.s: src/storage/table_page.cpp.s
 src/storage/table_page.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/table_page.cpp.s
 .PHONY : src/storage/table_page.cpp.s
+
+src/storage/tuple.o: src/storage/tuple.cpp.o
+.PHONY : src/storage/tuple.o
+
+# target to build an object file
+src/storage/tuple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/tuple.cpp.o
+.PHONY : src/storage/tuple.cpp.o
+
+src/storage/tuple.i: src/storage/tuple.cpp.i
+.PHONY : src/storage/tuple.i
+
+# target to preprocess a source file
+src/storage/tuple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/tuple.cpp.i
+.PHONY : src/storage/tuple.cpp.i
+
+src/storage/tuple.s: src/storage/tuple.cpp.s
+.PHONY : src/storage/tuple.s
+
+# target to generate assembly for a file
+src/storage/tuple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gator_db.dir/build.make CMakeFiles/gator_db.dir/src/storage/tuple.cpp.s
+.PHONY : src/storage/tuple.cpp.s
 
 # Help Target
 help:
@@ -1998,9 +2046,15 @@ help:
 	@echo "... src/storage/pager.o"
 	@echo "... src/storage/pager.i"
 	@echo "... src/storage/pager.s"
+	@echo "... src/storage/schema.o"
+	@echo "... src/storage/schema.i"
+	@echo "... src/storage/schema.s"
 	@echo "... src/storage/table_page.o"
 	@echo "... src/storage/table_page.i"
 	@echo "... src/storage/table_page.s"
+	@echo "... src/storage/tuple.o"
+	@echo "... src/storage/tuple.i"
+	@echo "... src/storage/tuple.s"
 .PHONY : help
 
 

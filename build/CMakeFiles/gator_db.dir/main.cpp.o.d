@@ -818,6 +818,7 @@ CMakeFiles/gator_db.dir/main.cpp.o: \
   /Users/gator/C++/Project/GatorDB/src/common/statement.h \
   /Users/gator/C++/Project/GatorDB/src/common/rid.h \
   /Users/gator/C++/Project/GatorDB/src/storage/tuple.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/schema.h \
   /Users/gator/C++/Project/GatorDB/src/executer.h \
   /Users/gator/C++/Project/GatorDB/src/storage/pager.h \
   /Users/gator/C++/Project/GatorDB/src/storage/table_page.h \

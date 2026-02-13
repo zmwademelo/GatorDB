@@ -1,6 +1,16 @@
 #include "executer.h"
 #include <string> 
 
+Schema Executer::initilize_default_schema() {
+    std::vector<Column> cols = {
+        {"id", Type::INTERGER, 4, 0},     // 4 bytes for int
+        {"name", Type::VARCHAR, 20, 0},   // 20 bytes for name
+        {"major", Type::INTERGER, 4, 0}   // 10 bytes for major
+    };
+    
+    // The Schema constructor will automatically calculate the correct offsets
+    return Schema(cols);
+}
 
 /*
 void Executer::execute_command(const StatementParser& stmt, DiskManager& disk){
@@ -58,17 +68,30 @@ void Executer::execute_command(const StatementParser& stmt, DiskManager& disk){
 
 void Executer::execute_insert(const StatementParser& stmt, DiskManager& disk) {
     std::cout<< "Executing INSERT statement..." << std::endl;
-
+    /* For Player only
     Tuple::Player player = stmt.get_target_player();
 
     // 2. Turn into bytes
     std::vector<char> bytes = Tuple::serialize(player);
-    std::string binary_str(bytes.begin(), bytes.end());
+    std::string binary_str(bytes.begin(), bytes.end()); 
+
+    */
+    //genaral Schema
+    const std::vector<std::string> raw_values = stmt.get_target_values(); 
+
+    if (raw_values.size() != current_schema_.get_columns().size()) {
+        std::cout << "Error: Column count mismatch." << std::endl;
+        return;
+    }
+
+    std::vector<char> binary_data = Tuple::serialize(current_schema_, raw_values); //?Shouldn't is use reference? 
+    uint32_t record_size = current_schema_.get_designed_size(); 
 
 
     Pager pager = Pager(&disk);
-    page_id_t target_page_id = pager.get_available_page_id(binary_str.length() + sizeof(TablePage::Slot));
+    //Player //page_id_t target_page_id = pager.get_available_page_id(binary_str.length() + sizeof(TablePage::Slot));
     //page_id_t target_page_id = pager.get_available_page_id(stmt.get_data_buffer().length() + sizeof(TablePage::Slot));
+    page_id_t target_page_id = pager.get_available_page_id(record_size + sizeof(TablePage::Slot));
     if (target_page_id == static_cast<page_id_t>(-1)) {
         std::cout << "Error: No available page with enough space for the record." << std::endl;
         return; 
@@ -76,7 +99,8 @@ void Executer::execute_insert(const StatementParser& stmt, DiskManager& disk) {
     char page_buffer[PAGE_SIZE] = {0};
     pager.read_page(target_page_id, page_buffer);
     TablePage page(page_buffer);
-    uint16_t slot_num = page.insert_record(binary_str.c_str(), binary_str.length());
+    uint16_t slot_num = page.insert_record(binary_data.data(), record_size);
+    //uint16_t slot_num = page.insert_record(binary_str.c_str(), binary_str.length());
     //uint16_t slot_num = page.insert_record(stmt.get_data_buffer().c_str());
     if (slot_num == static_cast<uint16_t>(-1)) {
         std::cout << "Error: Failed to insert record into page." << std::endl;
@@ -100,12 +124,18 @@ void Executer::execute_select(const StatementParser& stmt, DiskManager& disk) {
         //std::cout << "Error: Record not found or has been deleted. " << std::endl;
         return; 
     }
+    /*
     //Player 
     Tuple::Player player = Tuple::deserailize(record); 
     std::cout << "Record at Page " << target_rid.page_id << ", Slot " << target_rid.slot_num << ": " 
     << std::endl << "Name: " << player.name << "\nYOB: " << player.yob << "\nMajor: " << player.major << std::endl; 
+    */
+    std::vector<std::string> row = Tuple::deserialize(current_schema_, record); 
 
-
+    for(size_t i = 0; i < row.size(); ++i) {
+        std::cout << current_schema_.get_columns()[i].name << ": " << row[i] << " | "; 
+    }
+    std::cout << std::endl; 
    //std::cout << "Record at Page " << target_rid.page_id << ", Slot " << target_rid.slot_num << ": " << record << std::endl; 
     return; 
 
@@ -160,12 +190,24 @@ void Executer::execute_peek(const StatementParser& stmt, DiskManager& disk){
     
     for (auto i = 0; i < page.get_slot_count(); ++i) {
         TablePage::Slot* slot = page.get_slot(i); 
+        
         if (slot != nullptr && slot->length > 0)
         {
+            /*
             //Player 
             Tuple::Player player = Tuple::deserailize(page.get_record(i)); 
             std::cout << "Record at Page " << target_rid.page_id << ", Slot " << i << ": " 
             << std::endl << "Name: " << player.name << "\nYOB: " << player.yob << "\nMajor: " << player.major << std::endl; 
+            */
+
+            //Schema
+            std::vector<std::string> row = Tuple::deserialize(current_schema_, page.get_record(i)); 
+            std::cout << "Record at Page " << target_rid.page_id << ", Slot " << i << ": " << std::endl; 
+            for(size_t i = 0; i < row.size(); ++i) {
+                std::cout << current_schema_.get_columns()[i].name << ": " << row[i] << " | "; 
+            }
+             std::cout << std::endl; 
+
 
             //std::cout << "Slot[" << i <<"]: (" << slot->length << " Bytes) "<< page.get_record(i) << std::endl; 
         }

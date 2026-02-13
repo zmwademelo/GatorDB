@@ -11,7 +11,7 @@ BuildDirectory: /Users/gator/C++/Project/GatorDB/build/_deps/absl-build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Mings-Mac-mini.local
+Site: Mac
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-clang++

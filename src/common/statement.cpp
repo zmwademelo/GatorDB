@@ -113,17 +113,24 @@ bool StatementParser::parse_statement(const std::string& input_line_) {
         std::getline(ss >> std::ws, data_buffer_); //ws is for discarding leading whitespace before reading the rest of the line into data_buffer_
         return !data_buffer_.empty(); 
         */
+       /* This is for Player only
        std::string name; 
        uint16_t yob, major; 
        if (ss >> name >> yob >> major){
         target_player_ = Tuple::Player(name, yob, major);
         return true; 
        }
-         else {
-          std::cerr << "Error: Invalid syntax for INSERT. Expected: INSERT <name> <yob> <major>" << std::endl;
+        else {
+          std::cerr << "Error: Invalid syntax for INSERT. >" << std::endl;
        return false; 
          }
+       */
+    std::string temp_value; 
+    while (ss >> temp_value) {
+        values_.push_back(temp_value); 
     }
+    return !values_.empty();
+}
     else if (str_to_upper(command) == "SELECT" || str_to_upper(command) == "DELETE") {
         type_ = (str_to_upper(command) == "SELECT") ? STATEMENT_SELECT : STATEMENT_DELETE; 
 

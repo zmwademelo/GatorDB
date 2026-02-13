@@ -937,4 +937,5 @@ CMakeFiles/gator_db.dir/src/storage/pager.cpp.o: \
   /Users/gator/C++/Project/GatorDB/build/_deps/absl-src/absl/strings/internal/string_constant.h \
   /Users/gator/C++/Project/GatorDB/build/_deps/absl-src/absl/types/optional.h \
   /Users/gator/C++/Project/GatorDB/build/_deps/absl-src/absl/strings/has_ostream_operator.h \
-  /Users/gator/C++/Project/GatorDB/build/_deps/absl-src/absl/types/variant.h
+  /Users/gator/C++/Project/GatorDB/build/_deps/absl-src/absl/types/variant.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/schema.h

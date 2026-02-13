@@ -20,6 +20,9 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -32,6 +35,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
     searched_directories:
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -39,6 +45,9 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -50,6 +59,9 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
   -
     kind: "message-v1"
     backtrace:
@@ -77,6 +89,9 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -89,6 +104,9 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
     searched_directories:
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/install_name_tool"
+      - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/install_name_tool"
+      - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/opt/homebrew/sbin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -96,6 +114,9 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -107,5 +128,8 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Users/gator/.vscode/extensions/vadimcn.vscode-lldb-1.12.1/bin"
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/gator/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...

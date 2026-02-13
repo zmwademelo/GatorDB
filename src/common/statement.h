@@ -3,6 +3,7 @@
 #include "common/rid.h"
 #include "storage/tuple.h"
 #include <string> 
+#include <vector> 
 
 /*Function of Statement class: 
 Take a raw string input and parse it into a RID object and a data buffer. 
@@ -81,7 +82,8 @@ class StatementParser {
     const RID& get_rid() const {return target_rid_; }; 
     const std::string& get_data_buffer() const {return data_buffer_;};
 
-    const Tuple::Player& get_target_player() const {return target_player_;}; 
+    //const Tuple::Player& get_target_player() const {return target_player_;}; 
+    const std::vector<std::string> get_target_values() const { return values_;}  
 
 
     private: 
@@ -90,7 +92,10 @@ class StatementParser {
         std::string data_buffer_; 
 
         //For Player Struct only
-        Tuple::Player target_player_; 
+        //Tuple::Player target_player_; 
+
+        //For general schema
+        std::vector<std::string> values_; 
 
         std::string str_to_upper(const std::string& str) const;
 

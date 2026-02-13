@@ -2,14 +2,17 @@
 #include "common/statement.h"
 #include "storage/disk_manager.h"
 #include "storage/pager.h"
+#include "storage/schema.h"
 #include "storage/tuple.h"
+
 //#include "storage/table_page.h"
 #include <iostream>
 #include <string>
 
 class Executer{
     public: 
-        Executer(const StatementParser& stmt) : parser_(stmt) {} // Initialize DiskManager with a default database file
+        Executer(const StatementParser& stmt) : parser_(stmt), current_schema_(initilize_default_schema()) {} // Initialize DiskManager with a default database file
+        
         ~Executer() {}
         void execute_command(const StatementParser& stmt, DiskManager& disk); 
         void execute_insert(const StatementParser& stmt, DiskManager& disk); 
@@ -17,8 +20,10 @@ class Executer{
         void execute_peek(const StatementParser& stmt, DiskManager& disk); //For debug
         void execute_delete(const StatementParser& stmt, DiskManager& disk);
     private:
-        StatementParser parser_; 
+        StatementParser parser_;
         //DiskManager disk_; 
         char read_buffer_[PAGE_SIZE] = {0};
         char write_buffer_[PAGE_SIZE] = {0};
+        Schema current_schema_; 
+        static Schema initilize_default_schema(); //Hardcode schema
 }; 

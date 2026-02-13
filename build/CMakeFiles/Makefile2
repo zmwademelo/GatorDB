@@ -901,7 +901,7 @@ CMakeFiles/gator_db.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gator_db.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gator_db.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : CMakeFiles/gator_db.dir/rule
@@ -1824,12 +1824,12 @@ _deps/absl-build/CMakeFiles/ContinuousSubmit.dir/clean:
 _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/build.make _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/build.make _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=53 "Built target log_severity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target log_severity"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/rule
@@ -1841,7 +1841,7 @@ log_severity: _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/build.make _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=53 "Finished codegen for target log_severity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target log_severity"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/codegen
 
 # clean rule for target.
@@ -1856,12 +1856,12 @@ _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/clean:
 _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/all: _deps/absl-build/absl/base/CMakeFiles/log_severity.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/build.make _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/build.make _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=68 "Built target raw_logging_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target raw_logging_internal"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/rule
@@ -1873,7 +1873,7 @@ raw_logging_internal: _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal
 # codegen rule for target.
 _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/build.make _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=68 "Finished codegen for target raw_logging_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target raw_logging_internal"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/raw_logging_internal.dir/codegen
 
 # clean rule for target.
@@ -1923,12 +1923,12 @@ _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/all: _deps/absl-build/
 _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/all: _deps/absl-build/absl/base/CMakeFiles/base.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/build.make _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/build.make _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target malloc_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=56 "Built target malloc_internal"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/rule
@@ -1940,7 +1940,7 @@ malloc_internal: _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/build.make _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target malloc_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=56 "Finished codegen for target malloc_internal"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/malloc_internal.dir/codegen
 
 # clean rule for target.
@@ -1962,7 +1962,7 @@ _deps/absl-build/absl/base/CMakeFiles/base.dir/all: _deps/absl-build/absl/base/C
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/base.dir/rule
@@ -1995,7 +1995,7 @@ _deps/absl-build/absl/base/CMakeFiles/throw_delegate.dir/all: _deps/absl-build/a
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/throw_delegate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/throw_delegate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/throw_delegate.dir/rule
@@ -2028,7 +2028,7 @@ _deps/absl-build/absl/base/CMakeFiles/scoped_set_env.dir/all: _deps/absl-build/a
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/scoped_set_env.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/scoped_set_env.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/scoped_set_env.dir/rule
@@ -2055,12 +2055,12 @@ _deps/absl-build/absl/base/CMakeFiles/scoped_set_env.dir/clean:
 _deps/absl-build/absl/base/CMakeFiles/strerror.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/strerror.dir/build.make _deps/absl-build/absl/base/CMakeFiles/strerror.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/strerror.dir/build.make _deps/absl-build/absl/base/CMakeFiles/strerror.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target strerror"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=77 "Built target strerror"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/strerror.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/strerror.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/strerror.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/strerror.dir/rule
@@ -2072,7 +2072,7 @@ strerror: _deps/absl-build/absl/base/CMakeFiles/strerror.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/base/CMakeFiles/strerror.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/strerror.dir/build.make _deps/absl-build/absl/base/CMakeFiles/strerror.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target strerror"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=77 "Finished codegen for target strerror"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/strerror.dir/codegen
 
 # clean rule for target.
@@ -2091,12 +2091,12 @@ _deps/absl-build/absl/base/CMakeFiles/poison.dir/all: _deps/absl-build/absl/base
 _deps/absl-build/absl/base/CMakeFiles/poison.dir/all: _deps/absl-build/absl/base/CMakeFiles/base.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/poison.dir/build.make _deps/absl-build/absl/base/CMakeFiles/poison.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/poison.dir/build.make _deps/absl-build/absl/base/CMakeFiles/poison.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=57 "Built target poison"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target poison"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/poison.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/base/CMakeFiles/poison.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/base/CMakeFiles/poison.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/poison.dir/rule
@@ -2108,7 +2108,7 @@ poison: _deps/absl-build/absl/base/CMakeFiles/poison.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/base/CMakeFiles/poison.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/base/CMakeFiles/poison.dir/build.make _deps/absl-build/absl/base/CMakeFiles/poison.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=57 "Finished codegen for target poison"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target poison"
 .PHONY : _deps/absl-build/absl/base/CMakeFiles/poison.dir/codegen
 
 # clean rule for target.
@@ -2146,12 +2146,12 @@ _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/all: _deps/abs
 _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/build.make _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/build.make _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=39,40 "Built target hashtablez_sampler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=40 "Built target hashtablez_sampler"
 .PHONY : _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/rule
@@ -2163,7 +2163,7 @@ hashtablez_sampler: _deps/absl-build/absl/container/CMakeFiles/hashtablez_sample
 # codegen rule for target.
 _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/build.make _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=39,40 "Finished codegen for target hashtablez_sampler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=40 "Finished codegen for target hashtablez_sampler"
 .PHONY : _deps/absl-build/absl/container/CMakeFiles/hashtablez_sampler.dir/codegen
 
 # clean rule for target.
@@ -2207,12 +2207,12 @@ _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/all: _deps/absl-buil
 _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/build.make _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/build.make _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target raw_hash_set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=68 "Built target raw_hash_set"
 .PHONY : _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/rule
@@ -2224,7 +2224,7 @@ raw_hash_set: _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/build.make _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target raw_hash_set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=68 "Finished codegen for target raw_hash_set"
 .PHONY : _deps/absl-build/absl/container/CMakeFiles/raw_hash_set.dir/codegen
 
 # clean rule for target.
@@ -2247,7 +2247,7 @@ _deps/absl-build/absl/crc/CMakeFiles/crc_cpu_detect.dir/all: _deps/absl-build/ab
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/crc/CMakeFiles/crc_cpu_detect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/crc/CMakeFiles/crc_cpu_detect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/crc/CMakeFiles/crc_cpu_detect.dir/rule
@@ -2283,7 +2283,7 @@ _deps/absl-build/absl/crc/CMakeFiles/crc_internal.dir/all: _deps/absl-build/absl
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/crc/CMakeFiles/crc_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/crc/CMakeFiles/crc_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/crc/CMakeFiles/crc_internal.dir/rule
@@ -2326,7 +2326,7 @@ _deps/absl-build/absl/crc/CMakeFiles/crc32c.dir/all: _deps/absl-build/absl/strin
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/crc/CMakeFiles/crc32c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/crc/CMakeFiles/crc32c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/crc/CMakeFiles/crc32c.dir/rule
@@ -2370,7 +2370,7 @@ _deps/absl-build/absl/crc/CMakeFiles/crc_cord_state.dir/all: _deps/absl-build/ab
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/crc/CMakeFiles/crc_cord_state.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/crc/CMakeFiles/crc_cord_state.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/crc/CMakeFiles/crc_cord_state.dir/rule
@@ -2404,7 +2404,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/stacktrace.dir/all: _deps/absl-build/
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/stacktrace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/stacktrace.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/stacktrace.dir/rule
@@ -2450,7 +2450,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/symbolize.dir/all: _deps/absl-build/a
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/symbolize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/symbolize.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/symbolize.dir/rule
@@ -2498,7 +2498,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/examine_stack.dir/all: _deps/absl-bui
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/examine_stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/examine_stack.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/examine_stack.dir/rule
@@ -2542,7 +2542,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/all: _deps
 _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/all: _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target failure_signal_handler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=25 "Built target failure_signal_handler"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2559,7 +2559,7 @@ failure_signal_handler: _deps/absl-build/absl/debugging/CMakeFiles/failure_signa
 # codegen rule for target.
 _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target failure_signal_handler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=25 "Finished codegen for target failure_signal_handler"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/failure_signal_handler.dir/codegen
 
 # clean rule for target.
@@ -2580,7 +2580,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/debugging_internal.dir/all: _deps/abs
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/debugging_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/debugging_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/debugging_internal.dir/rule
@@ -2609,7 +2609,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/all: _deps/absl
 _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/all: _deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target demangle_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=21 "Built target demangle_internal"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2626,7 +2626,7 @@ demangle_internal: _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.
 # codegen rule for target.
 _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target demangle_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=21 "Finished codegen for target demangle_internal"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/codegen
 
 # clean rule for target.
@@ -2641,12 +2641,12 @@ _deps/absl-build/absl/debugging/CMakeFiles/demangle_internal.dir/clean:
 _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/all: _deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=21 "Built target decode_rust_punycode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target decode_rust_punycode"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/rule
@@ -2658,7 +2658,7 @@ decode_rust_punycode: _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_pun
 # codegen rule for target.
 _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=21 "Finished codegen for target decode_rust_punycode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target decode_rust_punycode"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/decode_rust_punycode.dir/codegen
 
 # clean rule for target.
@@ -2679,7 +2679,7 @@ _deps/absl-build/absl/debugging/CMakeFiles/demangle_rust.dir/all: _deps/absl-bui
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/demangle_rust.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/demangle_rust.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/demangle_rust.dir/rule
@@ -2738,12 +2738,12 @@ _deps/absl-build/absl/debugging/CMakeFiles/utf8_for_code_point.dir/clean:
 _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=42 "Built target leak_check"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target leak_check"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/rule
@@ -2755,7 +2755,7 @@ leak_check: _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/build.make _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=42 "Finished codegen for target leak_check"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target leak_check"
 .PHONY : _deps/absl-build/absl/debugging/CMakeFiles/leak_check.dir/codegen
 
 # clean rule for target.
@@ -2792,12 +2792,12 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/all: _deps/absl-bu
 _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=32 "Built target flags_program_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target flags_program_name"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/rule
@@ -2809,7 +2809,7 @@ flags_program_name: _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.di
 # codegen rule for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=32 "Finished codegen for target flags_program_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target flags_program_name"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_program_name.dir/codegen
 
 # clean rule for target.
@@ -2847,12 +2847,12 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/all: _deps/absl-build/ab
 _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=28 "Built target flags_config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target flags_config"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/rule
@@ -2864,7 +2864,7 @@ flags_config: _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=28 "Finished codegen for target flags_config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target flags_config"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_config.dir/codegen
 
 # clean rule for target.
@@ -2894,7 +2894,7 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_marshalling.dir/all: _deps/absl-bui
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_marshalling.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_marshalling.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_marshalling.dir/rule
@@ -2968,7 +2968,7 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_commandlineflag.dir/all: _deps/absl
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_commandlineflag.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_commandlineflag.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_commandlineflag.dir/rule
@@ -3011,7 +3011,7 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_private_handle_accessor.dir/all: _d
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_private_handle_accessor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_private_handle_accessor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_private_handle_accessor.dir/rule
@@ -3083,12 +3083,12 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/all: _deps/absl-buil
 _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target flags_reflection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=32 "Built target flags_reflection"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/rule
@@ -3100,7 +3100,7 @@ flags_reflection: _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/ru
 # codegen rule for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target flags_reflection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=32 "Finished codegen for target flags_reflection"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_reflection.dir/codegen
 
 # clean rule for target.
@@ -3144,12 +3144,12 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/all: _deps/absl-build/
 _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_optional_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target flags_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=28 "Built target flags_internal"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/rule
@@ -3161,7 +3161,7 @@ flags_internal: _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/build.make _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target flags_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=28 "Finished codegen for target flags_internal"
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_internal.dir/codegen
 
 # clean rule for target.
@@ -3229,7 +3229,7 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_usage_internal.dir/all: _deps/absl-
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_usage_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_usage_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_usage_internal.dir/rule
@@ -3310,7 +3310,7 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_usage.dir/all: _deps/absl-build/abs
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_usage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_usage.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_usage.dir/rule
@@ -3392,7 +3392,7 @@ _deps/absl-build/absl/flags/CMakeFiles/flags_parse.dir/all: _deps/absl-build/abs
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/flags/CMakeFiles/flags_parse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 67
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 65
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/flags/CMakeFiles/flags_parse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/flags/CMakeFiles/flags_parse.dir/rule
@@ -3431,12 +3431,12 @@ _deps/absl-build/absl/hash/CMakeFiles/hash.dir/all: _deps/absl-build/absl/types/
 _deps/absl-build/absl/hash/CMakeFiles/hash.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/hash/CMakeFiles/hash.dir/build.make _deps/absl-build/absl/hash/CMakeFiles/hash.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/hash/CMakeFiles/hash.dir/build.make _deps/absl-build/absl/hash/CMakeFiles/hash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target hash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=39 "Built target hash"
 .PHONY : _deps/absl-build/absl/hash/CMakeFiles/hash.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/hash/CMakeFiles/hash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/hash/CMakeFiles/hash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/hash/CMakeFiles/hash.dir/rule
@@ -3448,7 +3448,7 @@ hash: _deps/absl-build/absl/hash/CMakeFiles/hash.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/hash/CMakeFiles/hash.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/hash/CMakeFiles/hash.dir/build.make _deps/absl-build/absl/hash/CMakeFiles/hash.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target hash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=39 "Finished codegen for target hash"
 .PHONY : _deps/absl-build/absl/hash/CMakeFiles/hash.dir/codegen
 
 # clean rule for target.
@@ -3471,7 +3471,7 @@ _deps/absl-build/absl/hash/CMakeFiles/city.dir/all: _deps/absl-build/absl/base/C
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/hash/CMakeFiles/city.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/hash/CMakeFiles/city.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/hash/CMakeFiles/city.dir/rule
@@ -3507,7 +3507,7 @@ _deps/absl-build/absl/hash/CMakeFiles/low_level_hash.dir/all: _deps/absl-build/a
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/hash/CMakeFiles/low_level_hash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/hash/CMakeFiles/low_level_hash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/hash/CMakeFiles/low_level_hash.dir/rule
@@ -3575,12 +3575,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/all: _deps/absl-b
 _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=46 "Built target log_internal_check_op"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target log_internal_check_op"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/rule
@@ -3592,7 +3592,7 @@ log_internal_check_op: _deps/absl-build/absl/log/CMakeFiles/log_internal_check_o
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=46 "Finished codegen for target log_internal_check_op"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target log_internal_check_op"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_check_op.dir/codegen
 
 # clean rule for target.
@@ -3615,7 +3615,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_conditions.dir/all: _deps/absl
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_conditions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_conditions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_conditions.dir/rule
@@ -3655,12 +3655,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/all: _deps/absl-bui
 _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target log_internal_format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=49 "Built target log_internal_format"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/rule
@@ -3672,7 +3672,7 @@ log_internal_format: _deps/absl-build/absl/log/CMakeFiles/log_internal_format.di
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target log_internal_format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=49 "Finished codegen for target log_internal_format"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_format.dir/codegen
 
 # clean rule for target.
@@ -3698,12 +3698,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/all: _deps/absl-bu
 _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=49 "Built target log_internal_globals"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=50 "Built target log_internal_globals"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/rule
@@ -3715,7 +3715,7 @@ log_internal_globals: _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=49 "Finished codegen for target log_internal_globals"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=50 "Finished codegen for target log_internal_globals"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_globals.dir/codegen
 
 # clean rule for target.
@@ -3738,12 +3738,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/all: _deps/absl-buil
 _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/all: _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=52 "Built target log_internal_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=53 "Built target log_internal_proto"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/rule
@@ -3755,7 +3755,7 @@ log_internal_proto: _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=52 "Finished codegen for target log_internal_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=53 "Finished codegen for target log_internal_proto"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_proto.dir/codegen
 
 # clean rule for target.
@@ -3815,7 +3815,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_message.dir/all: _deps/absl-bu
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_message.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_message.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_message.dir/rule
@@ -3875,7 +3875,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/all: _deps/ab
 _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=50 "Built target log_internal_log_sink_set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target log_internal_log_sink_set"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3892,7 +3892,7 @@ log_internal_log_sink_set: _deps/absl-build/absl/log/CMakeFiles/log_internal_log
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=50 "Finished codegen for target log_internal_log_sink_set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target log_internal_log_sink_set"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/codegen
 
 # clean rule for target.
@@ -3907,12 +3907,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_log_sink_set.dir/clean:
 _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target log_internal_nullguard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=52 "Built target log_internal_nullguard"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/rule
@@ -3924,7 +3924,7 @@ log_internal_nullguard: _deps/absl-build/absl/log/CMakeFiles/log_internal_nullgu
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target log_internal_nullguard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=52 "Finished codegen for target log_internal_nullguard"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_nullguard.dir/codegen
 
 # clean rule for target.
@@ -3986,7 +3986,7 @@ _deps/absl-build/absl/log/CMakeFiles/die_if_null.dir/all: _deps/absl-build/absl/
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/die_if_null.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/die_if_null.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/die_if_null.dir/rule
@@ -4069,7 +4069,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_flags.dir/all: _deps/absl-build/absl/ty
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_flags.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 67
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 66
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_flags.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_flags.dir/rule
@@ -4125,12 +4125,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/all: _deps/absl-build/absl/
 _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target log_globals"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=45 "Built target log_globals"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/rule
@@ -4142,7 +4142,7 @@ log_globals: _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target log_globals"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=45 "Finished codegen for target log_globals"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_globals.dir/codegen
 
 # clean rule for target.
@@ -4188,12 +4188,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/all: _deps/absl-build/ab
 _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=45 "Built target log_initialize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=46 "Built target log_initialize"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/rule
@@ -4205,7 +4205,7 @@ log_initialize: _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/build.make _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=45 "Finished codegen for target log_initialize"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=46 "Finished codegen for target log_initialize"
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_initialize.dir/codegen
 
 # clean rule for target.
@@ -4236,7 +4236,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_entry.dir/all: _deps/absl-build/absl/ti
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_entry.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_entry.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_entry.dir/rule
@@ -4280,7 +4280,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_sink.dir/all: _deps/absl-build/absl/tim
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_sink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_sink.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_sink.dir/rule
@@ -4336,7 +4336,7 @@ _deps/absl-build/absl/log/CMakeFiles/vlog_config_internal.dir/all: _deps/absl-bu
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/vlog_config_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/vlog_config_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/vlog_config_internal.dir/rule
@@ -4376,7 +4376,7 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_fnmatch.dir/all: _deps/absl-bu
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/log/CMakeFiles/log_internal_fnmatch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/log/CMakeFiles/log_internal_fnmatch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/log/CMakeFiles/log_internal_fnmatch.dir/rule
@@ -4403,12 +4403,12 @@ _deps/absl-build/absl/log/CMakeFiles/log_internal_fnmatch.dir/clean:
 _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/build.make _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/build.make _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target int128"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=41 "Built target int128"
 .PHONY : _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/rule
@@ -4420,7 +4420,7 @@ int128: _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/build.make _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target int128"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=41 "Finished codegen for target int128"
 .PHONY : _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/codegen
 
 # clean rule for target.
@@ -4435,12 +4435,12 @@ _deps/absl-build/absl/numeric/CMakeFiles/int128.dir/clean:
 _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/build.make _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/build.make _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=25 "Built target exponential_biased"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target exponential_biased"
 .PHONY : _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/rule
@@ -4452,7 +4452,7 @@ exponential_biased: _deps/absl-build/absl/profiling/CMakeFiles/exponential_biase
 # codegen rule for target.
 _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/build.make _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=25 "Finished codegen for target exponential_biased"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target exponential_biased"
 .PHONY : _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/codegen
 
 # clean rule for target.
@@ -4467,12 +4467,12 @@ _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/clean:
 _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/all: _deps/absl-build/absl/profiling/CMakeFiles/exponential_biased.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/build.make _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/build.make _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=56 "Built target periodic_sampler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=57 "Built target periodic_sampler"
 .PHONY : _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/rule
@@ -4484,7 +4484,7 @@ periodic_sampler: _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.di
 # codegen rule for target.
 _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/build.make _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=56 "Finished codegen for target periodic_sampler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=57 "Finished codegen for target periodic_sampler"
 .PHONY : _deps/absl-build/absl/profiling/CMakeFiles/periodic_sampler.dir/codegen
 
 # clean rule for target.
@@ -4507,12 +4507,12 @@ _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/all: _deps/absl
 _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/all: _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=58 "Built target random_distributions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=58,59 "Built target random_distributions"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/rule
@@ -4524,7 +4524,7 @@ random_distributions: _deps/absl-build/absl/random/CMakeFiles/random_distributio
 # codegen rule for target.
 _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=58 "Finished codegen for target random_distributions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=58,59 "Finished codegen for target random_distributions"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_distributions.dir/codegen
 
 # clean rule for target.
@@ -4593,7 +4593,7 @@ _deps/absl-build/absl/random/CMakeFiles/random_seed_sequences.dir/all: _deps/abs
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_seed_sequences.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_seed_sequences.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_seed_sequences.dir/rule
@@ -4634,7 +4634,7 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_seed_material.dir/all: _
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_seed_material.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_internal_seed_material.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_seed_material.dir/rule
@@ -4677,12 +4677,12 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/all: _deps
 _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/all: _deps/absl-build/absl/types/CMakeFiles/bad_optional_access.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=61 "Built target random_internal_pool_urbg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target random_internal_pool_urbg"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/rule
@@ -4694,7 +4694,7 @@ random_internal_pool_urbg: _deps/absl-build/absl/random/CMakeFiles/random_intern
 # codegen rule for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=61 "Finished codegen for target random_internal_pool_urbg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target random_internal_pool_urbg"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/codegen
 
 # clean rule for target.
@@ -4709,7 +4709,7 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_pool_urbg.dir/clean:
 _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=60 "Built target random_internal_platform"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=61 "Built target random_internal_platform"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4726,7 +4726,7 @@ random_internal_platform: _deps/absl-build/absl/random/CMakeFiles/random_interna
 # codegen rule for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=60 "Finished codegen for target random_internal_platform"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=61 "Finished codegen for target random_internal_platform"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/codegen
 
 # clean rule for target.
@@ -4776,12 +4776,12 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_randen.dir/clean:
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/all: _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=64 "Built target random_internal_randen_slow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target random_internal_randen_slow"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/rule
@@ -4793,7 +4793,7 @@ random_internal_randen_slow: _deps/absl-build/absl/random/CMakeFiles/random_inte
 # codegen rule for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=64 "Finished codegen for target random_internal_randen_slow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target random_internal_randen_slow"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_slow.dir/codegen
 
 # clean rule for target.
@@ -4814,7 +4814,7 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes.dir/all: _d
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes.dir/rule
@@ -4841,12 +4841,12 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes.dir/clean:
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/all: _deps/absl-build/absl/random/CMakeFiles/random_internal_platform.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target random_internal_randen_hwaes_impl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=64 "Built target random_internal_randen_hwaes_impl"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/rule
@@ -4858,7 +4858,7 @@ random_internal_randen_hwaes_impl: _deps/absl-build/absl/random/CMakeFiles/rando
 # codegen rule for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target random_internal_randen_hwaes_impl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=64 "Finished codegen for target random_internal_randen_hwaes_impl"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_randen_hwaes_impl.dir/codegen
 
 # clean rule for target.
@@ -4882,12 +4882,12 @@ _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.d
 _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/all: _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=59 "Built target random_internal_distribution_test_util"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=60 "Built target random_internal_distribution_test_util"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/rule
@@ -4899,7 +4899,7 @@ random_internal_distribution_test_util: _deps/absl-build/absl/random/CMakeFiles/
 # codegen rule for target.
 _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/build.make _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=59 "Finished codegen for target random_internal_distribution_test_util"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=60 "Finished codegen for target random_internal_distribution_test_util"
 .PHONY : _deps/absl-build/absl/random/CMakeFiles/random_internal_distribution_test_util.dir/codegen
 
 # clean rule for target.
@@ -4954,7 +4954,7 @@ _deps/absl-build/absl/status/CMakeFiles/status.dir/all: _deps/absl-build/absl/ty
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/status/CMakeFiles/status.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/status/CMakeFiles/status.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/status/CMakeFiles/status.dir/rule
@@ -5023,7 +5023,7 @@ _deps/absl-build/absl/status/CMakeFiles/statusor.dir/all: _deps/absl-build/absl/
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/status/CMakeFiles/statusor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/status/CMakeFiles/statusor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/status/CMakeFiles/statusor.dir/rule
@@ -5054,12 +5054,12 @@ _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/all: _deps/absl-build/a
 _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/all: _deps/absl-build/absl/base/CMakeFiles/throw_delegate.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=77 "Built target string_view"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target string_view"
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/rule
@@ -5071,7 +5071,7 @@ string_view: _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=77 "Finished codegen for target string_view"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target string_view"
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/string_view.dir/codegen
 
 # clean rule for target.
@@ -5098,7 +5098,7 @@ _deps/absl-build/absl/strings/CMakeFiles/strings.dir/all: _deps/absl-build/absl/
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/strings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/strings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/strings.dir/rule
@@ -5133,7 +5133,7 @@ _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/all: _deps/absl-bu
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/strings_internal.dir/rule
@@ -5173,7 +5173,7 @@ _deps/absl-build/absl/strings/CMakeFiles/str_format_internal.dir/all: _deps/absl
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/str_format_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/str_format_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/str_format_internal.dir/rule
@@ -5219,7 +5219,7 @@ _deps/absl-build/absl/strings/CMakeFiles/cord_internal.dir/all: _deps/absl-build
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/cord_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/cord_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cord_internal.dir/rule
@@ -5253,7 +5253,7 @@ _deps/absl-build/absl/strings/CMakeFiles/cordz_functions.dir/all: _deps/absl-bui
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/cordz_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/cordz_functions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_functions.dir/rule
@@ -5307,7 +5307,7 @@ _deps/absl-build/absl/strings/CMakeFiles/cordz_handle.dir/all: _deps/absl-build/
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/cordz_handle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/cordz_handle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_handle.dir/rule
@@ -5365,12 +5365,12 @@ _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/all: _deps/absl-build/ab
 _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=13 "Built target cordz_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target cordz_info"
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 48
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/rule
@@ -5382,7 +5382,7 @@ cordz_info: _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/rule
 # codegen rule for target.
 _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=13 "Finished codegen for target cordz_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target cordz_info"
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_info.dir/codegen
 
 # clean rule for target.
@@ -5429,12 +5429,12 @@ _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/all: _deps/absl-
 _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Built target cordz_sample_token"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=13 "Built target cordz_sample_token"
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/rule
@@ -5446,7 +5446,7 @@ cordz_sample_token: _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.
 # codegen rule for target.
 _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/build.make _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num= "Finished codegen for target cordz_sample_token"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=13 "Finished codegen for target cordz_sample_token"
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cordz_sample_token.dir/codegen
 
 # clean rule for target.
@@ -5499,7 +5499,7 @@ _deps/absl-build/absl/strings/CMakeFiles/cord.dir/all: _deps/absl-build/absl/typ
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/strings/CMakeFiles/cord.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 50
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/strings/CMakeFiles/cord.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/strings/CMakeFiles/cord.dir/rule
@@ -5535,7 +5535,7 @@ _deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/all: _
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/synchronization/CMakeFiles/graphcycles_internal.dir/rule
@@ -5573,12 +5573,12 @@ _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/all
 _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/all: _deps/absl-build/absl/time/CMakeFiles/time_zone.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/build.make _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/build.make _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=41 "Built target kernel_timeout_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=42 "Built target kernel_timeout_internal"
 .PHONY : _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/rule
@@ -5590,7 +5590,7 @@ kernel_timeout_internal: _deps/absl-build/absl/synchronization/CMakeFiles/kernel
 # codegen rule for target.
 _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/build.make _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=41 "Finished codegen for target kernel_timeout_internal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/gator/C++/Project/GatorDB/build/CMakeFiles --progress-num=42 "Finished codegen for target kernel_timeout_internal"
 .PHONY : _deps/absl-build/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/codegen
 
 # clean rule for target.
@@ -5631,7 +5631,7 @@ _deps/absl-build/absl/synchronization/CMakeFiles/synchronization.dir/all: _deps/
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/synchronization/CMakeFiles/synchronization.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/synchronization/CMakeFiles/synchronization.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/synchronization/CMakeFiles/synchronization.dir/rule
@@ -5673,7 +5673,7 @@ _deps/absl-build/absl/time/CMakeFiles/time.dir/all: _deps/absl-build/absl/time/C
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/time/CMakeFiles/time.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/time/CMakeFiles/time.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/time/CMakeFiles/time.dir/rule
@@ -5770,7 +5770,7 @@ _deps/absl-build/absl/types/CMakeFiles/bad_any_cast_impl.dir/all: _deps/absl-bui
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/types/CMakeFiles/bad_any_cast_impl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/types/CMakeFiles/bad_any_cast_impl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/types/CMakeFiles/bad_any_cast_impl.dir/rule
@@ -5803,7 +5803,7 @@ _deps/absl-build/absl/types/CMakeFiles/bad_optional_access.dir/all: _deps/absl-b
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/types/CMakeFiles/bad_optional_access.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/types/CMakeFiles/bad_optional_access.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/types/CMakeFiles/bad_optional_access.dir/rule
@@ -5836,7 +5836,7 @@ _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all: _deps/absl-bu
 
 # Build rule for subdir invocation for target.
 _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gator/C++/Project/GatorDB/build/CMakeFiles 0
 .PHONY : _deps/absl-build/absl/types/CMakeFiles/bad_variant_access.dir/rule
