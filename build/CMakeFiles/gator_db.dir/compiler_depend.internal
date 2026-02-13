@@ -943,6 +943,7 @@ CMakeFiles/gator_db.dir/main.cpp.o
  /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h
  /Users/gator/C++/Project/GatorDB/src/storage/pager.h
  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h
+ /Users/gator/C++/Project/GatorDB/src/storage/tuple.h
 
 CMakeFiles/gator_db.dir/src/common/statement.cpp.o
  /Users/gator/C++/Project/GatorDB/src/common/statement.cpp
@@ -1743,6 +1744,7 @@ CMakeFiles/gator_db.dir/src/common/statement.cpp.o
  /Users/gator/C++/Project/GatorDB/src/common/config.h
  /Users/gator/C++/Project/GatorDB/src/common/rid.h
  /Users/gator/C++/Project/GatorDB/src/common/statement.h
+ /Users/gator/C++/Project/GatorDB/src/storage/tuple.h
 
 CMakeFiles/gator_db.dir/src/executer.cpp.o
  /Users/gator/C++/Project/GatorDB/src/executer.cpp
@@ -2686,6 +2688,7 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o
  /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h
  /Users/gator/C++/Project/GatorDB/src/storage/pager.h
  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h
+ /Users/gator/C++/Project/GatorDB/src/storage/tuple.h
 
 CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o
  /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp

@@ -14,10 +14,10 @@ void TablePage::initialize_empty_page() {
     header->free_space = PAGE_SIZE - sizeof(PageHeader);
 }
 
-uint16_t TablePage::insert_record(const char* record_data) {
+uint16_t TablePage::insert_record(const char* record_data, uint16_t record_length) { //Accept length to prevent only the first char is passed
     auto header = get_page_header();
     auto slots = get_slot_directory();
-    uint16_t record_length = std::strlen(record_data); //Apply strlen to c style string to get the length of the record data.
+    //uint16_t record_length = std::strlen(record_data); //Apply strlen to c style string to get the length of the record data.
     uint16_t required_space = record_length + sizeof(Slot); //Calculate the total space needed
     if (header->free_space < required_space) {
         return -1;

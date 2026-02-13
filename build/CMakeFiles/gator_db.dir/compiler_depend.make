@@ -941,7 +941,8 @@ CMakeFiles/gator_db.dir/main.cpp.o: /Users/gator/C++/Project/GatorDB/main.cpp \
   /Users/gator/C++/Project/GatorDB/src/executer.h \
   /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h \
   /Users/gator/C++/Project/GatorDB/src/storage/pager.h \
-  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h
+  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/tuple.h
 
 CMakeFiles/gator_db.dir/src/common/statement.cpp.o: /Users/gator/C++/Project/GatorDB/src/common/statement.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -1740,7 +1741,8 @@ CMakeFiles/gator_db.dir/src/common/statement.cpp.o: /Users/gator/C++/Project/Gat
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/gator/C++/Project/GatorDB/src/common/config.h \
   /Users/gator/C++/Project/GatorDB/src/common/rid.h \
-  /Users/gator/C++/Project/GatorDB/src/common/statement.h
+  /Users/gator/C++/Project/GatorDB/src/common/statement.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/tuple.h
 
 CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src/executer.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -2682,7 +2684,8 @@ CMakeFiles/gator_db.dir/src/executer.cpp.o: /Users/gator/C++/Project/GatorDB/src
   /Users/gator/C++/Project/GatorDB/src/executer.h \
   /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.h \
   /Users/gator/C++/Project/GatorDB/src/storage/pager.h \
-  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h
+  /Users/gator/C++/Project/GatorDB/src/storage/table_page.h \
+  /Users/gator/C++/Project/GatorDB/src/storage/tuple.h
 
 CMakeFiles/gator_db.dir/src/storage/disk_manager.cpp.o: /Users/gator/C++/Project/GatorDB/src/storage/disk_manager.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -6047,6 +6050,8 @@ _deps/absl-src/absl/numeric/int128_have_intrinsic.inc:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view:
+
+/Users/gator/C++/Project/GatorDB/src/storage/tuple.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg:
 

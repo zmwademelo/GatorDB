@@ -2,6 +2,7 @@
 #include "common/statement.h"
 #include "storage/disk_manager.h"
 #include "storage/pager.h"
+#include "storage/tuple.h"
 //#include "storage/table_page.h"
 #include <iostream>
 #include <string>

@@ -35,12 +35,13 @@ class TablePage {
             uint16_t offset; 
             int16_t length; //negative length means the slot is deleted
         }; 
+
         explicit TablePage(char* data) : data_(data) {
         }; 
 
         void initialize_empty_page();
 
-        uint16_t insert_record(const char* record_data);
+        uint16_t insert_record(const char* record_data, uint16_t record_length); //Accept length to prevent only the first char is passed
         std::string get_record(const uint16_t slot_num);
         bool delete_record(const uint16_t slot_num);
 

@@ -108,8 +108,21 @@ bool StatementParser::parse_statement(const std::string& input_line_) {
 
     if (str_to_upper(command) == "INSERT") {
         type_ = STATEMENT_INSERT; 
+        /*
+        This is for inserting plain string i.e. insert GATOR
         std::getline(ss >> std::ws, data_buffer_); //ws is for discarding leading whitespace before reading the rest of the line into data_buffer_
         return !data_buffer_.empty(); 
+        */
+       std::string name; 
+       uint16_t yob, major; 
+       if (ss >> name >> yob >> major){
+        target_player_ = Tuple::Player(name, yob, major);
+        return true; 
+       }
+         else {
+          std::cerr << "Error: Invalid syntax for INSERT. Expected: INSERT <name> <yob> <major>" << std::endl;
+       return false; 
+         }
     }
     else if (str_to_upper(command) == "SELECT" || str_to_upper(command) == "DELETE") {
         type_ = (str_to_upper(command) == "SELECT") ? STATEMENT_SELECT : STATEMENT_DELETE; 

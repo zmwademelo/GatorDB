@@ -50,10 +50,12 @@ int main() {
                 std::string input;
                 std::getline(std::cin, input); 
                 std::unique_ptr<StatementParser> stmt(new StatementParser());
-                stmt->parse_statement(input);
+                if (stmt->parse_statement(input)) {
+                    std::unique_ptr<Executer> executer(new Executer(*stmt));
+                    executer->execute_command(*stmt, disk);
+                }
                 //Executer executer = Executer(*stmt);
-                std::unique_ptr<Executer> executer(new Executer(*stmt));
-                executer->execute_command(*stmt, disk);
+                
                 //delete stmt;
             }
 

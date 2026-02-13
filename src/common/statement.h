@@ -1,6 +1,7 @@
 #pragma once
 
 #include "common/rid.h"
+#include "storage/tuple.h"
 #include <string> 
 
 /*Function of Statement class: 
@@ -80,11 +81,16 @@ class StatementParser {
     const RID& get_rid() const {return target_rid_; }; 
     const std::string& get_data_buffer() const {return data_buffer_;};
 
+    const Tuple::Player& get_target_player() const {return target_player_;}; 
+
 
     private: 
         statement_type type_;
         RID target_rid_;
         std::string data_buffer_; 
+
+        //For Player Struct only
+        Tuple::Player target_player_; 
 
         std::string str_to_upper(const std::string& str) const;
 
