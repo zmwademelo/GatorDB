@@ -139,7 +139,7 @@ void writeTableMetadata(Pager& pager, std::string table_name, const Schema& sche
 
     page_id_t catalog_page_head = pager.get_file_header()->catalog_page_head_;
 
-    page_id_t inserted_at_page_id = try_insert_at_page(pager, catalog_page_head, raw_bytes);
+    page_id_t inserted_at_page_id = insert_at_page_or_new(pager, catalog_page_head, raw_bytes);
 
 } 
 
@@ -188,9 +188,10 @@ void writeRecord(Pager& pager, std::string& table_name, Schema& schema, std::vec
 
     page_id_t page_head = metadata.first_page_id; 
 
-    page_id_t inserted_at_page_id = try_insert_at_page(pager, page_head, raw_bytes); 
+    page_id_t inserted_at_page_id = insert_at_page_or_new(pager, page_head, raw_bytes); 
 
 }
+
 
 std::vector<std::vector<Value>> readRecords(Pager& pager, const std::string& table_name) {
     std::vector<std::vector<Value>> result = {};
@@ -277,7 +278,7 @@ void truncateTable(Pager& pager, std::string table_name) {
     }
 }
 
-page_id_t try_insert_at_page(Pager& pager, page_id_t page_head, std::vector<char>& raw_bytes) {
+page_id_t insert_at_page_or_new(Pager& pager, page_id_t page_head, std::vector<char>& raw_bytes) {
 
     page_id_t last_page_id = INVALID_PAGE_ID; 
     size_t required_size = raw_bytes.size(); 

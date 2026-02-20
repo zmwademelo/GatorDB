@@ -20,7 +20,6 @@ int main() {
                 std::getline(std::cin, input); 
                 std::unique_ptr<StatementParser> stmt(new StatementParser());
                 if (stmt->parse_statement(input)) {
-
                     auto executer = std::make_unique<Executer>(*pager, *catalog);
                     executer->execute_command(*stmt);
                 }

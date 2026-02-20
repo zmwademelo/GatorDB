@@ -80,8 +80,8 @@ private:
         char* string_; 
     } data_;
 public: 
-    auto get_data() {return data_; }
-    auto get_type() {return type_; }
+    auto get_data() const {return data_; } //const
+    auto get_type() const {return type_; }
     Value (int32_t val) : type_(Type::INTEGER) {
         data_.integer_ = val; 
     }

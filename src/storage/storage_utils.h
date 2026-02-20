@@ -8,8 +8,16 @@
 
 
 //Helpers: 
+//Matedata
 std::vector<char> serialize(TableMetadata& metadata);
-page_id_t try_insert_at_page(Pager& pager, page_id_t page_head, std::vector<char>& raw_bytes); 
+std::vector<char> serialize(TableMetadata& metadata);
+
+//Record data
+std::vector<char> serialize(const Schema& schema, const std::vector<std::string>& values); 
+//Value deserialize(const char* buffer, Type type); 
+
+page_id_t insert_at_page_or_new(Pager& pager, page_id_t page_head, std::vector<char>& raw_bytes); 
+
 // Catalog calls it
 void writeTableMetadata(Pager& pager, std::string table_name, const Schema& schema); 
 
@@ -26,6 +34,7 @@ void truncateTable(Pager& pager, std::string table_name);
 void writeRecord(Pager& pager, std::string& table_name, Schema& schema, std::vector<std::string>& records); 
 
 // Executor calls it
+//Get all records from table
 std::vector<std::vector<Value>> readRecords(Pager& pager, const std::string& table_name); 
 
 std::vector<Value> readRow(Schema& schema, std::vector<char> raw_bytes); 

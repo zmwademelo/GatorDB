@@ -78,7 +78,7 @@ bool StatementParser::parse_statement(const std::string& input_line_) {
     }
     else if (str_to_upper(command) == "INSERT") {
         type_ = STATEMENT_INSERT; 
-    
+
         ss >> table_name_; 
         if (table_name_.empty()) return false; 
     
@@ -88,8 +88,41 @@ bool StatementParser::parse_statement(const std::string& input_line_) {
         }
         return !values_.empty();
     }
-    else if (str_to_upper(command) == "SELECT" || str_to_upper(command) == "DELETE") {
-        type_ = (str_to_upper(command) == "SELECT") ? STATEMENT_SELECT : STATEMENT_DELETE; 
+    else if (str_to_upper(command) == "SELECT") {
+        type_ = STATEMENT_SELECT; 
+
+        std::string column; 
+        std::string from; 
+        std::string table_name; 
+        
+        if ((ss >> column >> from >> table_name) && str_to_upper(from) == "FROM") {
+            table_name_ = table_name; 
+            column_name_ = column; 
+            // inside the SELECT branch, after reading table_name_
+            std::string where_kw;
+            if (ss >> where_kw && str_to_upper(where_kw) == "WHERE") {
+                std::string op_str;
+                if (ss >> predicate_.column >> op_str >> predicate_.value) {
+                    if      (op_str == "=")  predicate_.op = WhereOp::EQ;
+                    else if (op_str == "!=") predicate_.op = WhereOp::NEQ;
+                    else if (op_str == "<")  predicate_.op = WhereOp::LT;
+                    else if (op_str == ">")  predicate_.op = WhereOp::GT;
+                    else if (op_str == "<=") predicate_.op = WhereOp::LTE;
+                    else if (op_str == ">=") predicate_.op = WhereOp::GTE;
+                    return true;
+                } else {
+                    std::cerr << "Error: Invalid syntax for where clause.  Expected: " << "select col_name from table name where column <op> value " << std::endl;
+                    return false; 
+                }     
+            }
+            return true; 
+        } else {
+            std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << "select col_name from table name. " << std::endl; 
+            return false; 
+        }
+    }
+    else if (str_to_upper(command) == "DELETE") {
+        type_ = STATEMENT_DELETE; 
 
         std::string table_name; 
         
