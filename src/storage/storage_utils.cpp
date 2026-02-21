@@ -106,7 +106,7 @@ std::vector<char> serialize(const Schema& schema, const std::vector<std::string>
 
 
 
-Value Value::deserialize(const char* buffer, Type type) {
+Value deserialize(const char* buffer, Type type) {
     if (type == Type::INTEGER) {
         uint32_t val; 
         memcpy(&val, buffer, sizeof(uint32_t)); 
@@ -119,15 +119,15 @@ Value Value::deserialize(const char* buffer, Type type) {
     }
 }
 
-Value get_value(std::vector<char>& raw_bytes, const Schema& schema, uint32_t col_num) {
+Value get_value(const std::vector<char>& raw_bytes, const Schema& schema, uint32_t col_num) {
     uint32_t offset = schema.get_column_offset(col_num);
     Type type = schema.get_column_type(col_num); 
-    return Value::deserialize(raw_bytes.data() + offset, type); 
+    return deserialize(raw_bytes.data() + offset, type); 
 
 }
 
 
-void writeTableMetadata(Pager& pager, std::string table_name, const Schema& schema) {
+void writeTableMetadata(Pager& pager, std::string& table_name, const Schema& schema) {
     
     page_id_t table_page_id = pager.allocate_new_page();
 
@@ -178,7 +178,7 @@ TableMetadata getTableMetadata(Pager& pager, std::string table_name) {
     throw std::runtime_error("Table does not exist or is corrupted."); 
 }
 
-void writeRecord(Pager& pager, std::string& table_name, Schema& schema, std::vector<std::string>& records) {
+void writeRecord(Pager& pager, std::string& table_name, Schema& schema, const std::vector<std::string>& records) {
 
     std::vector<char> raw_bytes = serialize(schema, records); 
     
@@ -227,7 +227,7 @@ std::vector<std::vector<Value>> readRecords(Pager& pager, const std::string& tab
     return result; 
 }
 
-std::vector<Value> readRow(Schema& schema, std::vector<char> raw_bytes) {
+std::vector<Value> readRow(Schema& schema, const std::vector<char>& raw_bytes) {
 
     std::vector<Value> row = {}; 
     
@@ -239,7 +239,7 @@ std::vector<Value> readRow(Schema& schema, std::vector<char> raw_bytes) {
     
 }
 
-void deleteTableMetadata(Pager& pager, std::string table_name) {
+void deleteTableMetadata(Pager& pager, std::string& table_name) {
 
     // 
     page_id_t catalog_page_id = pager.get_file_header()->catalog_page_head_; 
@@ -263,7 +263,7 @@ void deleteTableMetadata(Pager& pager, std::string table_name) {
 
 }
 
-void truncateTable(Pager& pager, std::string table_name) {
+void truncateTable(Pager& pager, std::string& table_name) {
     page_id_t page_head = getTableMetadata(pager, table_name).first_page_id; 
     while (page_head != INVALID_PAGE_ID) {
 
@@ -278,7 +278,7 @@ void truncateTable(Pager& pager, std::string table_name) {
     }
 }
 
-page_id_t insert_at_page_or_new(Pager& pager, page_id_t page_head, std::vector<char>& raw_bytes) {
+page_id_t insert_at_page_or_new(Pager& pager, page_id_t page_head, const std::vector<char>& raw_bytes) {
 
     page_id_t last_page_id = INVALID_PAGE_ID; 
     size_t required_size = raw_bytes.size(); 
@@ -300,7 +300,6 @@ page_id_t insert_at_page_or_new(Pager& pager, page_id_t page_head, std::vector<c
     }
     if (last_page_id != INVALID_PAGE_ID) {
         std::vector<char> last_page_buffer = pager.read_page(last_page_id); 
-
         PageHeader& last_page_header = *reinterpret_cast<PageHeader*>(last_page_buffer.data());
 
         page_id_t new_tail_page_id = pager.allocate_new_page(); 

@@ -27,6 +27,7 @@ class Catalog {
 
 
     std::unordered_map<std::string, Schema> get_tables() {return tables_; } 
+    Pager& get_pager() { return *pager_; }
 
     void create_table(std::string& table_name, const Schema& schema); 
     void drop_table(std::string& table_name); 

@@ -20,8 +20,6 @@ struct Column {
 };
 
 
-
-
 class Schema {
     public: 
     Schema(){}

@@ -5,6 +5,7 @@
 #include <cctype>
 #include <iostream>
 #include <sstream>
+#include <memory>
 
 //2.0 
 
@@ -18,142 +19,125 @@ void parse_type_and_length(std::string raw, Type& type, uint32_t& length, uint32
     }
 
     if (typeStr == "VARCHAR") type = Type::VARCHAR;
-    else if (typeStr == "INT") type = Type::INTEGER;
+    else if (typeStr == "INT") type = Type::INTEGER; 
     else type = Type::UNKNOWN;
 
     length = lenStr.empty() ? 0 : std::stoul(lenStr);
 }
 
-std::string StatementParser::str_to_upper(const std::string& str) const {
-    std::string upper_str = str;
-    for (char& c : upper_str) { //unsiged? 
-        c = toupper(c);
-    }
-    return upper_str;
-}
-bool StatementParser::parse_statement(const std::string& input_line_) {
+
+std::unique_ptr<StatementParser> StatementParser::parse_statement(const std::string& input_line_) {
+    auto stmt = std::unique_ptr<StatementParser>(new StatementParser());
     std::vector<Column> columns; 
     std::stringstream ss(input_line_); 
     std::string command; 
     ss >> command; 
 
     if (str_to_upper(command) == "CREATE") {
-        type_ = STATEMENT_CREATE; 
+        stmt->type_ = STATEMENT_CREATE; 
 
         ss >> command; 
-        ss >> table_name_; 
+        ss >> stmt->table_name_; 
 
         uint32_t offset = 0; 
 
         while (ss >> command) {
             Column col; 
-            col.name = command; // First word is the column name (e.g., NAME)
+            col.name = command;
 
-            if (ss >> command) { // Second word is the type (e.g., VARCHAR30)
+            if (ss >> command) {
                 parse_type_and_length(command, col.type, col.length, col.offset);
             }
 
-            if (col.type == Type::INTEGER) {col.length = sizeof(uint32_t);} 
+            if (col.type == Type::INTEGER) { col.length = sizeof(uint32_t); } 
 
             col.offset = offset; 
             offset += col.length; 
             columns.push_back(col); 
-            
         }
-        schema_ = Schema(columns); 
-        return true; 
+        stmt->schema_ = Schema(columns); 
+        return stmt; 
     }
     else if (str_to_upper(command) == "DROP") {
-        type_ = STATEMENT_DROP; 
+        stmt->type_ = STATEMENT_DROP; 
 
         std::string table_name; 
-        
         if (ss >> table_name) {
-            table_name_ = table_name; 
-            return true; 
+            stmt->table_name_ = table_name; 
+            return stmt; 
         } else {
             std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << command << " table name. " << std::endl; 
-            return false; 
+            return nullptr; 
         }
     }
     else if (str_to_upper(command) == "INSERT") {
-        type_ = STATEMENT_INSERT; 
+        stmt->type_ = STATEMENT_INSERT; 
 
-        ss >> table_name_; 
-        if (table_name_.empty()) return false; 
+        ss >> stmt->table_name_; 
+        if (stmt->table_name_.empty()) return nullptr; 
     
         std::string temp_value; 
         while (ss >> temp_value) {
-            values_.push_back(temp_value); 
+            stmt->values_.push_back(temp_value); 
         }
-        return !values_.empty();
+        return stmt->values_.empty() ? nullptr : std::move(stmt);
     }
     else if (str_to_upper(command) == "SELECT") {
-        type_ = STATEMENT_SELECT; 
+        stmt->type_ = STATEMENT_SELECT; 
 
-        std::string column; 
-        std::string from; 
-        std::string table_name; 
-        
+        std::string column, from, table_name; 
         if ((ss >> column >> from >> table_name) && str_to_upper(from) == "FROM") {
-            table_name_ = table_name; 
-            column_name_ = column; 
-            // inside the SELECT branch, after reading table_name_
+            stmt->table_name_ = table_name; 
+            stmt->column_name_ = column; 
+
             std::string where_kw;
             if (ss >> where_kw && str_to_upper(where_kw) == "WHERE") {
                 std::string op_str;
-                if (ss >> predicate_.column >> op_str >> predicate_.value) {
-                    if      (op_str == "=")  predicate_.op = WhereOp::EQ;
-                    else if (op_str == "!=") predicate_.op = WhereOp::NEQ;
-                    else if (op_str == "<")  predicate_.op = WhereOp::LT;
-                    else if (op_str == ">")  predicate_.op = WhereOp::GT;
-                    else if (op_str == "<=") predicate_.op = WhereOp::LTE;
-                    else if (op_str == ">=") predicate_.op = WhereOp::GTE;
-                    return true;
+                if (ss >> stmt->predicate_.column >> op_str >> stmt->predicate_.value) {
+                    if      (op_str == "=")  stmt->predicate_.op = WhereOp::EQ;
+                    else if (op_str == "!=") stmt->predicate_.op = WhereOp::NEQ;
+                    else if (op_str == "<")  stmt->predicate_.op = WhereOp::LT;
+                    else if (op_str == ">")  stmt->predicate_.op = WhereOp::GT;
+                    else if (op_str == "<=") stmt->predicate_.op = WhereOp::LTE;
+                    else if (op_str == ">=") stmt->predicate_.op = WhereOp::GTE;
                 } else {
-                    std::cerr << "Error: Invalid syntax for where clause.  Expected: " << "select col_name from table name where column <op> value " << std::endl;
-                    return false; 
+                    std::cerr << "Error: Invalid WHERE syntax. Expected: WHERE column <op> value" << std::endl;
+                    return nullptr; 
                 }     
             }
-            return true; 
+            return stmt; 
         } else {
-            std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << "select col_name from table name. " << std::endl; 
-            return false; 
+            std::cerr << "Error: Invalid syntax for SELECT. Expected: SELECT col FROM table [WHERE col op val]" << std::endl; 
+            return nullptr; 
         }
     }
     else if (str_to_upper(command) == "DELETE") {
-        type_ = STATEMENT_DELETE; 
-
+        stmt->type_ = STATEMENT_DELETE; 
         std::string table_name; 
-        
         if (ss >> table_name) {
-            table_name_ = table_name; 
-            return true; 
+            stmt->table_name_ = table_name; 
+            return stmt; 
         } else {
             std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << command << " table name. " << std::endl; 
-            return false; 
+            return nullptr; 
         }
     }
-    else if(str_to_upper(command) == "PEEK") {
-        type_ = STATEMENT_PEEK; 
+    else if (str_to_upper(command) == "PEEK") {
+        stmt->type_ = STATEMENT_PEEK; 
         page_id_t pid; 
         if (ss >> pid) {
-            target_rid_ = RID(pid, 0); //Iterate from the first slot
-            return true; 
+            stmt->target_rid_ = RID(pid, 0);
+            return stmt; 
         } else {
-            std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << command << "<page_id>" << std::endl; 
-            return false; 
+            std::cerr << "Error: Invalid syntax for PEEK. Expected: PEEK <page_id>" << std::endl; 
+            return nullptr; 
         }
-        return true; 
     }
     else if (str_to_upper(command) == "EXIT" || str_to_upper(command) == "QUIT") {
-        type_ = STATEMENT_EXIT; 
-        return true; 
-    }else{
-        type_ = STATEMENT_UNKNOWN; 
-        return false; 
+        stmt->type_ = STATEMENT_EXIT; 
+        return stmt; 
+    } else {
+        std::cerr << "Unknown command: " << command << std::endl;
+        return nullptr; 
     }
-
-    
-    
 }

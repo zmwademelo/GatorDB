@@ -5,8 +5,17 @@
 #include <string> 
 #include <vector> 
 
+//Used by is a wrong comment pattern, per frog
+inline std::string str_to_upper(const std::string& str) {
+    std::string upper_str = str;
+    for (char& c : upper_str) { //unsiged? 
+        c = toupper(c);
+    }
+    return upper_str;
+}
 enum class WhereOp { NONE, EQ, NEQ, LT, GT, LTE, GTE };
 
+//Predicate that describes a where condition
 struct Predicate {
     std::string column;
     WhereOp op = WhereOp::NONE;
@@ -29,11 +38,7 @@ class StatementParser {
         STATEMENT_UNKNOWN
     }; 
 
-    
-
-    StatementParser() : type_(STATEMENT_UNKNOWN), target_rid_(0, 0) {}; 
-
-    bool parse_statement(const std::string& input_line_); 
+    static std::unique_ptr<StatementParser> parse_statement(const std::string& input_line_); //Factory method
 
     statement_type get_statement_type() const { return type_; }
     const RID& get_rid() const {return target_rid_; }
@@ -45,6 +50,9 @@ class StatementParser {
     const Predicate& get_predicate() const { return predicate_; }  
 
     private: 
+
+        StatementParser() = default; //private constructor
+
         statement_type type_;
         RID target_rid_; //record page and slot #
         //std::string data_buffer_; 
@@ -54,7 +62,7 @@ class StatementParser {
         std::vector<std::string> values_; //values of columns
         Predicate predicate_;
 
-        std::string str_to_upper(const std::string& str) const;
+        
 
 }; 
 
