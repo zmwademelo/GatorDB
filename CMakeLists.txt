@@ -19,10 +19,10 @@ add_executable(gator_db
     src/executer.cpp
     src/storage/disk_manager.cpp
     src/storage/pager.cpp
-    src/storage/catalog.cpp
+    src/catalog/catalog.cpp
     src/storage/table_page.cpp
-    src/storage/tuple.cpp    # <--- Is this here?
-    src/storage/schema.cpp   # <--- Is this here?
+    src/storage/tuple.cpp    
+    src/storage/schema.cpp   
     src/storage/storage_utils.cpp
     src/common/statement.cpp
 )

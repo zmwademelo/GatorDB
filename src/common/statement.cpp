@@ -26,8 +26,8 @@ void parse_type_and_length(std::string raw, Type& type, uint32_t& length, uint32
 }
 
 
-std::unique_ptr<StatementParser> StatementParser::parse_statement(const std::string& input_line_) {
-    auto stmt = std::unique_ptr<StatementParser>(new StatementParser());
+std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_line_) {
+    auto stmt = std::unique_ptr<Statement>(new Statement());
     std::vector<Column> columns; 
     std::stringstream ss(input_line_); 
     std::string command; 
@@ -113,12 +113,28 @@ std::unique_ptr<StatementParser> StatementParser::parse_statement(const std::str
     }
     else if (str_to_upper(command) == "DELETE") {
         stmt->type_ = STATEMENT_DELETE; 
-        std::string table_name; 
-        if (ss >> table_name) {
+        std::string from, table_name; 
+        if ((ss >> from >> table_name) && str_to_upper(from) == "FROM") {
             stmt->table_name_ = table_name; 
+
+            std::string where_kw;
+            if (ss >> where_kw && str_to_upper(where_kw) == "WHERE") {
+                std::string op_str;
+                if (ss >> stmt->predicate_.column >> op_str >> stmt->predicate_.value) {
+                    if      (op_str == "=")  stmt->predicate_.op = WhereOp::EQ;
+                    else if (op_str == "!=") stmt->predicate_.op = WhereOp::NEQ;
+                    else if (op_str == "<")  stmt->predicate_.op = WhereOp::LT;
+                    else if (op_str == ">")  stmt->predicate_.op = WhereOp::GT;
+                    else if (op_str == "<=") stmt->predicate_.op = WhereOp::LTE;
+                    else if (op_str == ">=") stmt->predicate_.op = WhereOp::GTE;
+                } else {
+                    std::cerr << "Error: Invalid WHERE syntax. Expected: WHERE column <op> value" << std::endl;
+                    return nullptr; 
+                }     
+            }
             return stmt; 
         } else {
-            std::cerr << "Error: Invalid syntax for " << command << ". Expected: " << command << " table name. " << std::endl; 
+            std::cerr << "Error: Invalid syntax for DELETE. Expected: SELECT FROM table [WHERE col op val]" << std::endl; 
             return nullptr; 
         }
     }

@@ -1,15 +1,13 @@
 #pragma once
 
 #include "common/config.h"
-#include "schema.h" 
-#include "pager.h"
-#include "storage_utils.h"
+#include "storage/schema.h" 
+#include "storage/pager.h"
+#include "storage/storage_utils.h"
 
 #include <string>
 #include <vector>
 #include <unordered_map>
-
-
 
 
 class Catalog {
@@ -26,12 +24,12 @@ class Catalog {
     }
 
 
-    std::unordered_map<std::string, Schema> get_tables() {return tables_; } 
-    Pager& get_pager() { return *pager_; }
+    std::unordered_map<std::string, Schema> get_tables() const {return tables_; } 
+    Pager& get_pager() const { return *pager_; }
 
-    void create_table(std::string& table_name, const Schema& schema); 
-    void drop_table(std::string& table_name); 
-    void insert_record(std::string& table_name, const std::vector<std::string> records); 
+    void create_table(const std::string& table_name, const Schema& schema); 
+    void drop_table(const std::string& table_name); 
+    //void insert_record(const std::string& table_name, const std::vector<std::string> records); 
 
 }; 
 

@@ -24,7 +24,7 @@ struct Predicate {
 };
 
 //2.0 
-class StatementParser {
+class Statement {
     public: 
     //Type of statements
     enum statement_type {
@@ -38,7 +38,7 @@ class StatementParser {
         STATEMENT_UNKNOWN
     }; 
 
-    static std::unique_ptr<StatementParser> parse_statement(const std::string& input_line_); //Factory method
+    static std::unique_ptr<Statement> parse_statement(const std::string& input_line_); //Factory method
 
     statement_type get_statement_type() const { return type_; }
     const RID& get_rid() const {return target_rid_; }
@@ -51,7 +51,7 @@ class StatementParser {
 
     private: 
 
-        StatementParser() = default; //private constructor
+        Statement() = default; //private constructor
 
         statement_type type_;
         RID target_rid_; //record page and slot #
@@ -61,8 +61,6 @@ class StatementParser {
         std::string column_name_; 
         std::vector<std::string> values_; //values of columns
         Predicate predicate_;
-
-        
 
 }; 
 

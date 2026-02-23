@@ -7,7 +7,7 @@
 
 
 
-void Catalog::create_table(std::string& table_name, const Schema& schema) {
+void Catalog::create_table(const std::string& table_name, const Schema& schema) {
     if (tables_.find(table_name) != tables_.end()) {
         std::cout << "Create Table Failed. The table name already exists." << std::endl; 
         return;
@@ -31,7 +31,7 @@ void Catalog::create_table(std::string& table_name, const Schema& schema) {
     return; 
 }
 
-void Catalog::drop_table(std::string& table_name) {
+void Catalog::drop_table(const std::string& table_name) {
     if (tables_.find(table_name) == tables_.end()) {
         std::cout << "Drop Table Failed. The table does not exist." << std::endl; 
         return;
