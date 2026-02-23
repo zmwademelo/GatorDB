@@ -17,10 +17,10 @@ class TablePage {
 
         void initialize_empty_page();
 
-        uint16_t insert_record(Tuple tuple);
-        //uint16_t insert_record(const char* record_data, uint16_t record_length); //Accept length to prevent only the first char is passed
+        uint16_t InsertRecord(Tuple tuple);
+        //uint16_t InsertRecord(const char* record_data, uint16_t record_length); //Accept length to prevent only the first char is passed
         std::string get_record(const uint16_t slot_num);
-        bool delete_record(const uint16_t slot_num);
+        bool DeleteRecord(const uint16_t slot_num);
 
         uint16_t get_slot_count() {
             return get_page_header()->slot_count; 

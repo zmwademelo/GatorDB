@@ -3,7 +3,7 @@
 #include "common/config.h"
 
 /*
-You create a single "address" object that can be passed between the Executer, TablePage, and any future Index classes.
+You Create a single "address" object that can be passed between the Executer, TablePage, and any future Index classes.
 */
 struct RID {
     page_id_t page_id; // The page number where the record is stored

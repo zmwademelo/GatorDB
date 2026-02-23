@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-std::vector<char> serialize(TableMetadata &metadata) { //
+std::vector<char> Serialize(TableMetadata &metadata) { //
   std::vector<char> result;
 
   // Serialize table_name (length-prefixed string)
@@ -19,7 +19,7 @@ std::vector<char> serialize(TableMetadata &metadata) { //
                     sizeof(page_id_t));
 
   // Serialize schema - number of columns
-  const auto &columns = metadata.schema.get_columns();
+  const auto &columns = metadata.schema.GetColumns();
   uint32_t num_columns = columns.size();
   result.insert(result.end(), reinterpret_cast<char *>(&num_columns),
                 reinterpret_cast<char *>(&num_columns) + sizeof(uint32_t));
@@ -45,7 +45,7 @@ std::vector<char> serialize(TableMetadata &metadata) { //
   return result;
 }
 
-TableMetadata deserialize(const std::vector<char> &buffer) {
+TableMetadata Deserialize(const std::vector<char> &buffer) {
   size_t offset = 0;
 
   // Deserialize table_name
@@ -92,16 +92,16 @@ TableMetadata deserialize(const std::vector<char> &buffer) {
   return TableMetadata(table_name, schema, first_page_id);
 }
 
-std::vector<char> serialize(const Schema &schema,
+std::vector<char> Serialize(const Schema &schema,
                             const std::vector<std::string> &values) {
 
-  uint32_t designed_size = schema.get_designed_size();
+  uint32_t designed_size = schema.GetDesignedSize();
   std::vector<char> buffer(
       designed_size); // The buffer holds the largest possible record size based
                       // on the schema.
 
   const std::vector<Column> &columns =
-      schema.get_columns(); // columns is a vector of <Column>.
+      schema.GetColumns(); // columns is a vector of <Column>.
   for (size_t i = 0; i < columns.size(); ++i) {
     if (columns[i].type == Type::INTEGER) {
       int val = std::stoi(values[i]); // stoi converts string to int
@@ -132,7 +132,7 @@ std::vector<char> serialize(const Schema &schema,
   return buffer;
 }
 
-Value deserialize(const char *buffer, Type type) {
+Value Deserialize(const char *buffer, Type type) {
   if (type == Type::INTEGER) {
     uint32_t val;
     memcpy(&val, buffer, sizeof(uint32_t));
@@ -148,56 +148,55 @@ Value deserialize(const char *buffer, Type type) {
   }
 }
 
-Value get_value(const std::vector<char> &raw_bytes, const Schema &schema,
+Value GetValue(const std::vector<char> &raw_bytes, const Schema &schema,
                 uint32_t col_num) {
-  uint32_t offset = schema.get_column_offset(col_num);
-  Type type = schema.get_column_type(col_num);
-  return deserialize(raw_bytes.data() + offset, type);
+  uint32_t offset = schema.GetColumnOffset(col_num);
+  Type type = schema.GetColumnType(col_num);
+  return Deserialize(raw_bytes.data() + offset, type);
 }
 
-void writeTableMetadata(Pager &pager, const std::string &table_name,
+void WriteTableMetadata(Pager &pager, const std::string &table_name,
                         const Schema &schema) {
 
-  page_id_t table_page_id = pager.allocate_new_page();
+  page_id_t table_page_id = pager.AllocateNewPage();
 
   auto metadata = TableMetadata(table_name, schema, table_page_id);
 
-  std::vector<char> raw_bytes = serialize(metadata);
+  std::vector<char> raw_bytes = Serialize(metadata);
 
   size_t required_size = raw_bytes.size();
 
-  page_id_t catalog_page_head = pager.get_file_header().catalog_page_head_;
+  page_id_t catalog_page_head = pager.GetFileHeader().catalog_page_head;
 
   page_id_t inserted_at_page_id =
-      insert_at_page_or_new(pager, catalog_page_head, raw_bytes);
+      InsertAtPageOrNew(pager, catalog_page_head, raw_bytes);
 }
 
-std::vector<TableMetadata> readAllTableMetadata(const Pager &pager) {
-  page_id_t catalog_page_id = pager.get_file_header().catalog_page_head_;
+std::vector<TableMetadata> ReadAllTableMetadata(const Pager &pager) {
+  page_id_t catalog_page_id = pager.GetFileHeader().catalog_page_head;
   std::vector<TableMetadata> result;
 
   while (catalog_page_id != INVALID_PAGE_ID) {
-    std::vector<char> page_buffer = pager.read_page(catalog_page_id);
+    std::vector<char> page_buffer = pager.ReadPage(catalog_page_id);
     PageHeader &page_header =
         *reinterpret_cast<PageHeader *>(page_buffer.data());
     for (auto slot_num = 0; slot_num < page_header.slot_count; ++slot_num) {
-      auto record = pager.get_record_raw_bytes(catalog_page_id, slot_num);
+      auto record = pager.GetRecordRawBytes(catalog_page_id, slot_num);
       if (record.size() != 0) {
-        auto schema = deserialize(record).schema;
-        auto table_name = deserialize(record).table_name;
-        auto first_page_id = deserialize(record).first_page_id;
+        auto schema = Deserialize(record).schema;
+        auto table_name = Deserialize(record).table_name;
+        auto first_page_id = Deserialize(record).first_page_id;
         auto metadata = TableMetadata(table_name, schema, first_page_id);
         result.push_back(metadata);
       }
     }
     catalog_page_id = page_header.next_page_id;
   }
-
   return result;
 }
 
-TableMetadata getTableMetadata(const Pager &pager, std::string table_name) {
-  auto all_table_metadata = readAllTableMetadata(pager);
+TableMetadata GetTableMetadata(const Pager &pager, std::string table_name) {
+  auto all_table_metadata = ReadAllTableMetadata(pager);
 
   for (auto metadata : all_table_metadata) {
     if (metadata.table_name == table_name) {
@@ -207,25 +206,25 @@ TableMetadata getTableMetadata(const Pager &pager, std::string table_name) {
   throw std::runtime_error("Table does not exist or is corrupted.");
 }
 
-void writeRecord(Pager &pager, std::string &table_name, Schema &schema,
+void WriteRecord(Pager &pager, std::string &table_name, Schema &schema,
                  const std::vector<std::string> &records) {
 
-  std::vector<char> raw_bytes = serialize(schema, records);
+  std::vector<char> raw_bytes = Serialize(schema, records);
 
   size_t required_size = raw_bytes.size();
 
-  TableMetadata metadata = getTableMetadata(pager, table_name);
+  TableMetadata metadata = GetTableMetadata(pager, table_name);
 
   page_id_t page_head = metadata.first_page_id;
 
   page_id_t inserted_at_page_id =
-      insert_at_page_or_new(pager, page_head, raw_bytes);
+      InsertAtPageOrNew(pager, page_head, raw_bytes);
 }
 
-std::vector<std::vector<Value>> readTable(const Pager &pager,
+std::vector<std::vector<Value>> ReadTable(const Pager &pager,
                                             const std::string &table_name) {
   std::vector<std::vector<Value>> result = {};
-  auto all_table_metadata = readAllTableMetadata(pager);
+  auto all_table_metadata = ReadAllTableMetadata(pager);
 
   page_id_t page_head = INVALID_PAGE_ID;
   Schema schema;
@@ -239,7 +238,7 @@ std::vector<std::vector<Value>> readTable(const Pager &pager,
   }
 
   while (page_head != INVALID_PAGE_ID) {
-    std::vector<char> page_head_buffer = pager.read_page(page_head);
+    std::vector<char> page_head_buffer = pager.ReadPage(page_head);
 
     PageHeader &page_head_header =
         *reinterpret_cast<PageHeader *>(page_head_buffer.data());
@@ -248,9 +247,9 @@ std::vector<std::vector<Value>> readTable(const Pager &pager,
 
     for (auto slot_num = 0; slot_num < slot_count; ++slot_num) {
       std::vector<char> raw_bytes =
-          pager.get_record_raw_bytes(page_head, slot_num);
+          pager.GetRecordRawBytes(page_head, slot_num);
       if (raw_bytes.empty()) continue; // skip deleted slots
-      auto row = readRow(schema, raw_bytes);
+      auto row = ReadRow(schema, raw_bytes);
       result.push_back(row);
     }
 
@@ -260,122 +259,121 @@ std::vector<std::vector<Value>> readTable(const Pager &pager,
   return result;
 }
 
-std::vector<Value> readRow(Schema &schema, const std::vector<char> &raw_bytes) {
+std::vector<Value> ReadRow(Schema &schema, const std::vector<char> &raw_bytes) {
 
   std::vector<Value> row = {};
 
-  for (auto col_num = 0; col_num < schema.get_columns().size(); ++col_num) {
-    Value value = get_value(raw_bytes, schema, col_num);
+  for (auto col_num = 0; col_num < schema.GetColumns().size(); ++col_num) {
+    Value value = GetValue(raw_bytes, schema, col_num);
     row.push_back(value);
   }
   return row;
 }
 
-void deleteTableMetadata(Pager &pager, const std::string &table_name) {
+void DeleteTableMetadata(Pager &pager, const std::string &table_name) {
 
-  //
-  page_id_t catalog_page_id = pager.get_file_header().catalog_page_head_;
+  page_id_t catalog_page_id = pager.GetFileHeader().catalog_page_head;
 
   while (catalog_page_id != INVALID_PAGE_ID) {
-    std::vector<char> page_buffer = pager.read_page(catalog_page_id);
+    std::vector<char> page_buffer = pager.ReadPage(catalog_page_id);
     PageHeader &page_header =
         *reinterpret_cast<PageHeader *>(page_buffer.data());
     for (auto slot_num = 0; slot_num < page_header.slot_count; ++slot_num) {
-      auto record = pager.get_record_raw_bytes(catalog_page_id, slot_num);
-      if (deserialize(record).table_name == table_name) {
-        pager.delete_record(catalog_page_id, slot_num);
+      auto record = pager.GetRecordRawBytes(catalog_page_id, slot_num);
+      if (Deserialize(record).table_name == table_name) {
+        pager.DeleteRecord(catalog_page_id, slot_num);
         break;
       }
     }
     catalog_page_id = page_header.next_page_id;
   }
 
-  // TableMetadata metadata = getTableMetadata(pager, table_name);
+  // TableMetadata metadata = GetTableMetadata(pager, table_name);
   // page_id_t page_head = metadata.first_page_id;
 }
 
-void truncateTable(Pager &pager, const std::string &table_name) {
-  page_id_t page_head = getTableMetadata(pager, table_name).first_page_id;
+void TruncateTable(Pager &pager, const std::string &table_name) {
+  page_id_t page_head = GetTableMetadata(pager, table_name).first_page_id;
   while (page_head != INVALID_PAGE_ID) {
 
-    std::vector<char> page_head_buffer = pager.read_page(page_head);
+    std::vector<char> page_head_buffer = pager.ReadPage(page_head);
     PageHeader &page_head_header =
         *reinterpret_cast<PageHeader *>(page_head_buffer.data());
     page_id_t next_page_id = page_head_header.next_page_id;
 
-    pager.deallocate_page(page_head);
+    pager.DeallocatePage(page_head);
 
     page_head = next_page_id;
   }
 }
 
-page_id_t insert_at_page_or_new(Pager &pager, page_id_t page_head,
+page_id_t InsertAtPageOrNew(Pager &pager, page_id_t page_head,
                                 const std::vector<char> &raw_bytes) {
 
   page_id_t last_page_id = INVALID_PAGE_ID;
   size_t required_size = raw_bytes.size();
 
   while (page_head != INVALID_PAGE_ID) {
-    std::vector<char> page_head_buffer = pager.read_page(page_head);
+    std::vector<char> page_head_buffer = pager.ReadPage(page_head);
 
     PageHeader &page_head_header =
         *reinterpret_cast<PageHeader *>(page_head_buffer.data());
 
-    auto free_space = page_head_header.get_free_space();
+    auto free_space = page_head_header.GetFreeSpace();
 
     if (free_space >= required_size) {
-      pager.insert_record(raw_bytes, page_head);
+      pager.InsertRecord(raw_bytes, page_head);
       return page_head;
     }
     last_page_id = page_head;
     page_head = page_head_header.next_page_id;
   }
   if (last_page_id != INVALID_PAGE_ID) {
-    std::vector<char> last_page_buffer = pager.read_page(last_page_id);
+    std::vector<char> last_page_buffer = pager.ReadPage(last_page_id);
     PageHeader &last_page_header =
         *reinterpret_cast<PageHeader *>(last_page_buffer.data());
 
-    page_id_t new_tail_page_id = pager.allocate_new_page();
-    pager.insert_record(raw_bytes, new_tail_page_id);
+    page_id_t new_tail_page_id = pager.AllocateNewPage();
+    pager.InsertRecord(raw_bytes, new_tail_page_id);
     last_page_header.next_page_id = new_tail_page_id;
 
-    std::vector<char> new_tail_page_buffer = pager.read_page(new_tail_page_id);
+    std::vector<char> new_tail_page_buffer = pager.ReadPage(new_tail_page_id);
     PageHeader &new_tail_page_header =
         *reinterpret_cast<PageHeader *>(new_tail_page_buffer.data());
     new_tail_page_header.prev_page_id = last_page_id;
 
-    pager.write_page(
+    pager.WritePage(
         last_page_id,
         last_page_buffer.data()); // Don't forget to persist the change!
-    pager.write_page(new_tail_page_id, new_tail_page_buffer.data());
+    pager.WritePage(new_tail_page_id, new_tail_page_buffer.data());
     return new_tail_page_id;
   }
   return INVALID_PAGE_ID;
 }
 
-void peekPage(const Pager &pager, page_id_t page_id) {
-  const FileHeader& file_header = pager.get_file_header();
+void PeekPage(const Pager &pager, page_id_t page_id) {
+  const FileHeader& file_header = pager.GetFileHeader();
   if (page_id == 0) { // For File header
 
     std::cout << "------File Header: ------" << std::endl;
-    std::cout << "Magic Number: " << file_header.magic_number_ << std::endl;
-    std::cout << "Version: " << file_header.version_ << std::endl;
-    std::cout << "Catalog Page Head: " << file_header.catalog_page_head_
+    std::cout << "Magic Number: " << file_header.magic_number << std::endl;
+    std::cout << "Version: " << file_header.version << std::endl;
+    std::cout << "Catalog Page Head: " << file_header.catalog_page_head
               << std::endl;
-    std::cout << "Catalog Page Tail: " << file_header.catalog_page_tail_
+    std::cout << "Catalog Page Tail: " << file_header.catalog_page_tail
               << std::endl;
-    std::cout << "Page count: " << file_header.page_count_ << std::endl;
-    std::cout << "Free Page Head: " << file_header.free_page_head_
+    std::cout << "Page count: " << file_header.page_count << std::endl;
+    std::cout << "Free Page Head: " << file_header.free_page_head
               << std::endl;
-    std::cout << "Free Page Tail: " << file_header.free_page_tail_
+    std::cout << "Free Page Tail: " << file_header.free_page_tail
               << std::endl;
 
     return;
-  } else if (page_id >= file_header.page_count_) {
+  } else if (page_id >= file_header.page_count) {
     std::cout << "Page has not been allocated yet. " << std::endl;
     return;
   } else { // Statndard page
-    std::vector<char> page_buffer = pager.read_page(page_id);
+    std::vector<char> page_buffer = pager.ReadPage(page_id);
     PageHeader &page_header =
         *reinterpret_cast<PageHeader *>(page_buffer.data());
 
@@ -395,9 +393,9 @@ void peekPage(const Pager &pager, page_id_t page_id) {
   }
 }
 
-void deleteRow(const Pager& pager, std::vector<Value>& target_row, const std::string& table_name) {
+void DeleteRow(const Pager& pager, std::vector<Value>& target_row, const std::string& table_name) {
     
-  auto all_table_metadata = readAllTableMetadata(pager);
+  auto all_table_metadata = ReadAllTableMetadata(pager);
 
   page_id_t page_head = INVALID_PAGE_ID;
   Schema schema;
@@ -411,7 +409,7 @@ void deleteRow(const Pager& pager, std::vector<Value>& target_row, const std::st
   }
 
   while (page_head != INVALID_PAGE_ID) {
-    std::vector<char> page_head_buffer = pager.read_page(page_head);
+    std::vector<char> page_head_buffer = pager.ReadPage(page_head);
 
     PageHeader &page_head_header =
         *reinterpret_cast<PageHeader *>(page_head_buffer.data());
@@ -420,12 +418,12 @@ void deleteRow(const Pager& pager, std::vector<Value>& target_row, const std::st
 
     for (auto slot_num = 0; slot_num < slot_count; ++slot_num) {
       std::vector<char> raw_bytes =
-          pager.get_record_raw_bytes(page_head, slot_num);
+          pager.GetRecordRawBytes(page_head, slot_num);
       if (raw_bytes.empty()) continue; // skip deleted slots
-      auto row = readRow(schema, raw_bytes);
+      auto row = ReadRow(schema, raw_bytes);
       //Must define == operator in Value class to compare
         if (row == target_row) { 
-            pager.delete_record(page_head, slot_num); 
+            pager.DeleteRecord(page_head, slot_num); 
         }
     }
     page_head = page_head_header.next_page_id;

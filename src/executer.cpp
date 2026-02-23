@@ -1,12 +1,12 @@
 #include "executer.h"
 #include <string> 
 
-inline bool matches(const std::vector<Value>& row, const Predicate& pred, const size_t pred_col_idx ) {
+inline bool Matches(const std::vector<Value>& row, const Predicate& pred, const size_t pred_col_idx ) {
 
-        if (!pred.active() || pred_col_idx >= row.size()) return true;
+        if (!pred.Active() || pred_col_idx >= row.size()) return true;
         const Value& v = row[pred_col_idx];
-        if (v.get_type() == Type::INTEGER) {
-            int32_t rowVal = v.get_data().integer_;
+        if (v.GetType() == Type::INTEGER) {
+            int32_t rowVal = v.GetData().integer_;
             int32_t cmpVal = std::stoi(pred.value);
             switch (pred.op) {
                 case WhereOp::EQ:  return rowVal == cmpVal;
@@ -18,32 +18,32 @@ inline bool matches(const std::vector<Value>& row, const Predicate& pred, const 
                 default: return true;
             }
         } else { // VARCHAR
-            std::string rowStr = v.get_data().string_;
+            std::string rowStr = v.GetData().string_;
             if (pred.op == WhereOp::EQ)  return rowStr == pred.value;
             if (pred.op == WhereOp::NEQ) return rowStr != pred.value;
         }
         return true;
     };
 
-void Executer::execute_command(const Statement& stmt, Pager& pager, Catalog& catalog){
-    switch (stmt.get_statement_type()) {
+void Executer::ExecuteCommand(const Statement& stmt, Pager& pager, Catalog& catalog){
+    switch (stmt.GetStatementType()) {
         case Statement::STATEMENT_CREATE: 
-            execute_create(stmt, catalog); 
+            ExecuteCreate(stmt, catalog); 
             break; 
         case Statement::STATEMENT_DROP: 
-            execute_drop(stmt, catalog); 
+            ExecuteDrop(stmt, catalog); 
             break; 
         case Statement::STATEMENT_INSERT: 
-            execute_insert(stmt, pager, catalog); 
+            ExecuteInsert(stmt, pager, catalog); 
             break; 
         case Statement::STATEMENT_SELECT: 
-            execute_select(stmt, pager, catalog);
+            ExecuteSelect(stmt, pager, catalog);
             break;
         case Statement::STATEMENT_DELETE: 
-            execute_delete(stmt, pager, catalog);
+            ExecuteDelete(stmt, pager, catalog);
             break;
         case Statement::STATEMENT_PEEK: 
-            execute_peek(stmt, pager); 
+            ExecutePeek(stmt, pager); 
             break; 
         case Statement::STATEMENT_EXIT:  
             std::cout << "Exiting..." << std::endl;
@@ -54,32 +54,30 @@ void Executer::execute_command(const Statement& stmt, Pager& pager, Catalog& cat
     }
 }
 
-void Executer::execute_create(const Statement& stmt, Catalog& catalog){
+void Executer::ExecuteCreate(const Statement& stmt, Catalog& catalog){
     std::cout<< "Executing CREATE statement..." << std::endl; 
     
-    std::string table_name = stmt.get_table_name(); 
-    Schema schema = stmt.get_schema(); 
-
-    catalog.create_table(table_name, schema); 
+    std::string table_name = stmt.GetTableName(); 
+    Schema schema = stmt.GetSchema(); 
+    catalog.CreateTable(table_name, schema); 
 
 }
 
-void Executer::execute_drop(const Statement& stmt, Catalog& catalog){
+void Executer::ExecuteDrop(const Statement& stmt, Catalog& catalog){
     std::cout<< "Executing DROP statement..." << std::endl; 
     
-    std::string table_name = stmt.get_table_name(); 
-
-    catalog.drop_table(table_name); 
+    std::string table_name = stmt.GetTableName(); 
+    catalog.DropTable(table_name); 
 
 }
 
 
-void Executer::execute_insert(const Statement& stmt, Pager& pager, const Catalog& catalog) {
+void Executer::ExecuteInsert(const Statement& stmt, Pager& pager, const Catalog& catalog) {
     std::cout<< "Executing INSERT statement..." << std::endl;
 
-    std::string  table_name = stmt.get_table_name(); 
-    std::vector<std::string> new_records = stmt.get_target_values(); 
-    auto table_map = catalog.get_tables(); 
+    std::string  table_name = stmt.GetTableName(); 
+    std::vector<std::string> new_records = stmt.GetTargetValues(); 
+    auto table_map = catalog.GetTables(); 
 
     if (table_map.find(table_name) == table_map.end()) {
         std::cout << "Insert Failed. The table does not exist." << std::endl; 
@@ -87,17 +85,17 @@ void Executer::execute_insert(const Statement& stmt, Pager& pager, const Catalog
     }
     Schema schema = table_map.find(table_name)->second; 
     //Need to validate input
-    writeRecord(pager, table_name, schema, new_records); 
+    WriteRecord(pager, table_name, schema, new_records); 
 
 }
 
 
-void Executer::execute_select(const Statement& stmt, const Pager& pager, const Catalog& catalog) { 
+void Executer::ExecuteSelect(const Statement& stmt, const Pager& pager, const Catalog& catalog) { 
     std::cout << "Executing SELECT statement..." << std::endl; 
 
-    std::string table_name = stmt.get_table_name(); 
-    std::string column_name = stmt.get_column_name(); // "*" or a specific column name
-    std::unordered_map<std::string, Schema> table_map = catalog.get_tables(); 
+    std::string table_name = stmt.GetTableName(); 
+    std::string column_name = stmt.GetColumnName(); // "*" or a specific column name
+    std::unordered_map<std::string, Schema> table_map = catalog.GetTables(); 
 
     if (table_map.find(table_name) == table_map.end()) {
         std::cout << "Select failed. The table does not exist." << std::endl; 
@@ -105,7 +103,7 @@ void Executer::execute_select(const Statement& stmt, const Pager& pager, const C
     }
 
     Schema schema = table_map.find(table_name)->second; 
-    const std::vector<Column>& columns = schema.get_columns();
+    const std::vector<Column>& columns = schema.GetColumns();
 
     // Build the list of column indices to project
     std::vector<size_t> col_indices;
@@ -126,14 +124,14 @@ void Executer::execute_select(const Statement& stmt, const Pager& pager, const C
         }
     }
 
-    std::vector<std::vector<Value>> records = readTable(pager, table_name); 
+    std::vector<std::vector<Value>> records = ReadTable(pager, table_name); 
 
     //Where clause 
-    Predicate pred = stmt.get_predicate();
+    Predicate pred = stmt.GetPredicate();
 
     // Find the column index the predicate targets
     size_t pred_col_idx = SIZE_MAX; 
-    if (pred.active()) {
+    if (pred.Active()) {
         for (size_t i = 0; i < columns.size(); ++i) {
             if (columns[i].name == pred.column) { pred_col_idx = i; break; }
         }
@@ -149,14 +147,14 @@ void Executer::execute_select(const Statement& stmt, const Pager& pager, const C
 
     // Print rows — only the projected columns
     for (const std::vector<Value>& row : records) {
-        if (!matches(row, pred, pred_col_idx)) continue;  // <-- filter here
+        if (!Matches(row, pred, pred_col_idx)) continue;  // <-- filter here
         for (size_t i : col_indices) {
             if (i >= row.size()) continue; //safety check
             std::string data; 
-            if (row[i].get_type() == Type::INTEGER) {
-                data = std::to_string(row[i].get_data().integer_); 
-            } else if (row[i].get_type() == Type::VARCHAR) {
-                data = row[i].get_data().string_; 
+            if (row[i].GetType() == Type::INTEGER) {
+                data = std::to_string(row[i].GetData().integer_); 
+            } else if (row[i].GetType() == Type::VARCHAR) {
+                data = row[i].GetData().string_; 
             }
             std::cout << data << "  |  "; 
         }
@@ -164,11 +162,11 @@ void Executer::execute_select(const Statement& stmt, const Pager& pager, const C
     }
 }
 
-void Executer::execute_delete(const Statement& stmt, Pager& pager, const Catalog& catalog) {
+void Executer::ExecuteDelete(const Statement& stmt, Pager& pager, const Catalog& catalog) {
     std::cout << "Executing DELETE statement..." << std::endl;
 
-    std::string table_name = stmt.get_table_name(); 
-    std::unordered_map<std::string, Schema> table_map = catalog.get_tables(); 
+    std::string table_name = stmt.GetTableName(); 
+    std::unordered_map<std::string, Schema> table_map = catalog.GetTables(); 
 
     if (table_map.find(table_name) == table_map.end()) {
         std::cout << "Select failed. The table does not exist." << std::endl; 
@@ -176,37 +174,36 @@ void Executer::execute_delete(const Statement& stmt, Pager& pager, const Catalog
     }
 
     Schema schema = table_map.find(table_name)->second; 
-    const std::vector<Column>& columns = schema.get_columns();
+    const std::vector<Column>& columns = schema.GetColumns();
 
     if (table_map.find(table_name) == table_map.end()) {
         std::cout << "Delete failed. The table does not exist." << std::endl; 
         return;
     }
 
-    Predicate pred = stmt.get_predicate(); 
-    std::vector<std::vector<Value>> records = readTable(pager, table_name); 
+    Predicate pred = stmt.GetPredicate(); 
+    std::vector<std::vector<Value>> records = ReadTable(pager, table_name); 
 
     size_t pred_col_idx = SIZE_MAX; 
-    if (pred.active()) {
+    if (pred.Active()) {
         for (size_t i = 0; i < columns.size(); ++i) {
             if (columns[i].name == pred.column) { pred_col_idx = i; break; }
         }
     }
 
-
     for (std::vector<Value>& row : records) {
-        if (!matches(row, pred, pred_col_idx)) continue;  // <-- filter here
+        if (!Matches(row, pred, pred_col_idx)) continue;  // <-- filter here
         //rows_to_delete.push_back(row); 
-        deleteRow(pager, row, table_name); 
+        DeleteRow(pager, row, table_name); 
     }
 
 }
 
-void Executer::execute_peek(const Statement& stmt, const Pager& pager) {
+void Executer::ExecutePeek(const Statement& stmt, const Pager& pager) {
 
     std::cout << "Executing PEEK statement..." << std::endl; 
-    page_id_t page_id = stmt.get_rid().page_id; 
+    page_id_t page_id = stmt.GetRid().page_id; 
 
-    peekPage(pager, page_id); 
+    PeekPage(pager, page_id); 
  
 }

@@ -3,114 +3,103 @@
 
 Pager::Pager(std::unique_ptr<DiskManager> diskmanager) : disk_manager_(std::move(diskmanager)) {}
 
-// Pager::Pager(const std::string db_file_name) : disk_manager_(std::make_unique<DiskManager>(db_file_name)) {
-//         if (!load_file_header()) {
-//             init_file_header();
-//             allocate_new_page();
-//         }
-// }
-
 // static
-std::unique_ptr<Pager> Pager::create(const std::string db_file_name)
+std::unique_ptr<Pager> Pager::Create(const std::string db_file_name)
 {
     std::unique_ptr<DiskManager> disk = std::make_unique<DiskManager>(db_file_name);
-    std::unique_ptr<Pager> pager = std::make_unique<Pager>(std::move(disk));
-    if (!pager->load_file_header())
+    //std::unique_ptr<Pager> pager = std::make_unique<Pager>(std::move(disk)); 
+    /*
+    Create() is the only way to create a Pager object. 
+    Cannot use make_unique because the default constructor is private
+    */
+    std::unique_ptr<Pager> pager(new Pager(std::move(disk)));
+
+    if (!pager->LoadFileHeader())
     {
-        pager->init_file_header();
-        pager->allocate_new_page();
+        pager->InitFileHeader();
+        pager->AllocateNewPage();
     }
     return pager;
 }
 
-bool Pager::load_file_header()
+bool Pager::LoadFileHeader()
 {
     char buffer[PAGE_SIZE] = {0};
-    bool header_exists = disk_manager_->read_page(0, buffer) && buffer[0] != '\0';
+    bool header_exists = disk_manager_->ReadPage(0, buffer) && buffer[0] != '\0';
 
-    if (header_exists)
-    {
+    if (header_exists) {
         // Existing database file - load and validate header
-        std::memcpy(&file_header_, buffer, sizeof(file_header_));
-        if (file_header_.magic_number_ != GATORDB_MAGIC_NUMBER)
-        {
+        std::memcpy(&file_header_, buffer, sizeof(FileHeader));
+        if (file_header_.magic_number != GATORDB_MAGIC_NUMBER) {
             throw std::runtime_error("Invalid database file: Magic number mismatch.");
-        }
-        else
-        {
-            return true;
-        }
-    }
-    else
-    {
-        return false;
-    }
+        } 
+        return true;      
+    } else { return false; }
 }
 
-void Pager::init_file_header()
+void Pager::InitFileHeader()
 {
     file_header_ = FileHeader();
-    flush_header();
+    FlushFileHeader();
 }
 
-void Pager::flush_header()
+void Pager::FlushFileHeader()
 {
     char buffer[PAGE_SIZE] = {0}; // Initialize buffer to zero
     std::memcpy(buffer, &file_header_, sizeof(FileHeader));
-    disk_manager_->write_page(0, buffer);
+    disk_manager_->WritePage(0, buffer);
 }
 
-void Pager::init_page(page_id_t page_id)
+void Pager::InitPage(page_id_t page_id)
 {
     if (page_id < 1)
         return;
     char buffer[PAGE_SIZE] = {0};
     PageHeader page_header = PageHeader();
     std::memcpy(buffer, &page_header, sizeof(PageHeader));
-    disk_manager_->write_page(page_id, buffer);
+    //Persist
+    disk_manager_->WritePage(page_id, buffer); 
 }
 
 // 2.0
 
-page_id_t Pager::allocate_new_page()
+page_id_t Pager::AllocateNewPage()
 {
     page_id_t new_page_id;
     char page_buffer[PAGE_SIZE] = {0};
-    if (file_header_.free_page_head_ > 0 && file_header_.free_page_head_ != INVALID_PAGE_ID)
+    if (file_header_.free_page_head > 0 && file_header_.free_page_head != INVALID_PAGE_ID)
     { // Recycled
-        new_page_id = file_header_.free_page_head_;
+        new_page_id = file_header_.free_page_head;
 
-        std::vector<char> free_page_head_buffer = read_page(new_page_id);
+        std::vector<char> free_page_head_buffer = ReadPage(new_page_id);
         PageHeader &free_page_head_header = *reinterpret_cast<PageHeader *>(free_page_head_buffer.data());
 
-        if (file_header_.free_page_head_ == file_header_.free_page_tail_)
+        if (file_header_.free_page_head == file_header_.free_page_tail)
         { // only one free page
-            file_header_.free_page_head_ = INVALID_PAGE_ID;
-        }
-        else
-        {
-            file_header_.free_page_head_ = free_page_head_header.next_page_id;
+            file_header_.free_page_head = INVALID_PAGE_ID;
+        }else{
+            file_header_.free_page_head = free_page_head_header.next_page_id;
         }
     }
     else
     {
-        new_page_id = file_header_.page_count_++;
+        new_page_id = file_header_.page_count++;
         // When you grow the file, you should ideally write a "blank" page (4096 zeros) to that new offset immediately to "claim" the space.
-        init_page(new_page_id);
+        InitPage(new_page_id);
     }
 
-    flush_header();
+    FlushFileHeader();
     return new_page_id;
 }
 
-void Pager::deallocate_page(page_id_t page_id)
+void Pager::DeallocatePage(page_id_t page_id)
 {
 
     if (page_id < 2)
         return; // Page 0 and Page 1 are reserved
-    std::vector<char> page_buffer = read_page(page_id);
+    std::vector<char> page_buffer = ReadPage(page_id);
     PageHeader &page_header = *reinterpret_cast<PageHeader *>(page_buffer.data());
-    if (file_header_.free_page_head_ == INVALID_PAGE_ID)
+    if (file_header_.free_page_head == INVALID_PAGE_ID)
     {
         // Assign free page head first time
         page_header.magic_number = GATORDB_MAGIC_NUMBER;
@@ -121,34 +110,32 @@ void Pager::deallocate_page(page_id_t page_id)
         page_header.slot_count = 0;
         page_header.deleted_count = 0;
 
-        file_header_.free_page_head_ = page_id;
-        file_header_.free_page_tail_ = page_id;
-    }
-    else
-    {
-
+        file_header_.free_page_head = page_id;
+        file_header_.free_page_tail = page_id;
+    }else{
+        // Append this page to the back of free page list
         page_header.magic_number = GATORDB_MAGIC_NUMBER;
-        page_header.prev_page_id = file_header_.free_page_tail_;
+        page_header.prev_page_id = file_header_.free_page_tail;
         page_header.next_page_id = INVALID_PAGE_ID;
         page_header.lower_bound = sizeof(PageHeader);
         page_header.upper_bound = PAGE_SIZE;
         page_header.slot_count = 0;
         page_header.deleted_count = 0;
 
-        file_header_.free_page_tail_ = page_id;
+        file_header_.free_page_tail = page_id;
     }
 
     // header_.page_count_--;
-    flush_header();
-
+    FlushFileHeader();
+    //Reset page content, exlucing the page header
     std::memset(page_buffer.data() + sizeof(PageHeader), '0', PAGE_SIZE - sizeof(PageHeader));
-    write_page(page_id, page_buffer.data());
+    WritePage(page_id, page_buffer.data());
 }
 
-std::vector<char> Pager::read_page(page_id_t page_id) const
+std::vector<char> Pager::ReadPage(page_id_t page_id) const
 {
     std::vector<char> buffer(PAGE_SIZE, 0);
-    bool success = disk_manager_->read_page(page_id, buffer.data());
+    bool success = disk_manager_->ReadPage(page_id, buffer.data());
     if (!success)
     {
         throw std::runtime_error("Failed to read page");
@@ -156,9 +143,9 @@ std::vector<char> Pager::read_page(page_id_t page_id) const
     return buffer; // Moved, not copied
 }
 
-bool Pager::write_page(page_id_t page_id, const char *data) const
+bool Pager::WritePage(page_id_t page_id, const char *data) const
 {
-    bool success = disk_manager_->write_page(page_id, data);
+    bool success = disk_manager_->WritePage(page_id, data);
     if (!success)
     {
         throw std::runtime_error("Failed to write page to disk.");
@@ -166,20 +153,17 @@ bool Pager::write_page(page_id_t page_id, const char *data) const
     return success;
 }
 
-uint16_t Pager::insert_record(const std::vector<char> &record, page_id_t page_id) const
+uint16_t Pager::InsertRecord(const std::vector<char> &record, page_id_t page_id) const
 {
 
-    std::vector<char> page_buffer = read_page(page_id);
+    std::vector<char> page_buffer = ReadPage(page_id);
     PageHeader &page_header = *reinterpret_cast<PageHeader *>(page_buffer.data());
     Slot *slots = reinterpret_cast<Slot *>(page_buffer.data() + sizeof(PageHeader));
 
     uint16_t record_length = record.size();
     uint16_t required_space = record_length + sizeof(Slot);
 
-    if (page_header.get_free_space() < required_space)
-    {
-        return -1;
-    }
+    if (page_header.GetFreeSpace() < required_space) { return -1;}
 
     for (uint16_t i = 0; i < page_header.slot_count; ++i)
     {   //Reuse deleted slot
@@ -189,7 +173,7 @@ uint16_t Pager::insert_record(const std::vector<char> &record, page_id_t page_id
             std::memcpy(page_buffer.data() + offset, record.data(), record_length);
             slots[i].length = record_length; // Update the slot to reflect the new record length
             page_header.deleted_count--; 
-            write_page(page_id, page_buffer.data());
+            WritePage(page_id, page_buffer.data());
             // free space stays unchanged
             return i; // Return the slot number where the record was inserted
         }
@@ -206,13 +190,13 @@ uint16_t Pager::insert_record(const std::vector<char> &record, page_id_t page_id
     page_header.lower_bound += sizeof(Slot);
     page_header.slot_count++;
 
-    write_page(page_id, page_buffer.data());
+    WritePage(page_id, page_buffer.data());
     return new_slot_num; // Return the slot number where the record was inserted
 }
 
-std::vector<char> Pager::get_record_raw_bytes(page_id_t page_id, uint16_t slot_num) const
+std::vector<char> Pager::GetRecordRawBytes(page_id_t page_id, uint16_t slot_num) const
 {
-    std::vector<char> page_buffer = read_page(page_id);
+    std::vector<char> page_buffer = ReadPage(page_id);
     PageHeader &page_header = *reinterpret_cast<PageHeader *>(page_buffer.data());
     if (slot_num > page_header.slot_count)
         return {};
@@ -228,9 +212,9 @@ std::vector<char> Pager::get_record_raw_bytes(page_id_t page_id, uint16_t slot_n
     return result;
 }
 
-bool Pager::delete_record(page_id_t page_id, uint16_t slot_num) const
+bool Pager::DeleteRecord(page_id_t page_id, uint16_t slot_num) const
 {
-    std::vector<char> page_buffer = read_page(page_id);
+    std::vector<char> page_buffer = ReadPage(page_id);
     PageHeader &page_header = *reinterpret_cast<PageHeader *>(page_buffer.data());
     if (slot_num > page_header.slot_count)
         return false;
@@ -246,7 +230,7 @@ bool Pager::delete_record(page_id_t page_id, uint16_t slot_num) const
     }
     (target_slot)->length = -(target_slot)->length;
     // page_header->slot_count--;
-    page_header.deleted_count++; // Currently no way to trigger deallocate_page
-    write_page(page_id, page_buffer.data());
+    page_header.deleted_count++; // Currently no way to trigger DeallocatePage
+    WritePage(page_id, page_buffer.data());
     return true;
 }

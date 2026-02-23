@@ -34,10 +34,10 @@ class Schema {
         designed_size_ = current_offset; //Designed size is calculated during initialization and stored as a member variable for quick access later.
     }
     //Quick access functions
-    const std::vector<Column>& get_columns() const {return columns_; } //Return a const reference to avoid unnecessary copying of the columns vector when we just want to read it.
-    uint32_t get_designed_size() const {return designed_size_; } 
-    uint32_t get_column_offset(size_t col_num) const {return columns_[col_num].offset; }
-    Type  get_column_type(size_t col_num) const {return columns_[col_num].type; }
+    const std::vector<Column>& GetColumns() const {return columns_; } //Return a const reference to avoid unnecessary copying of the columns vector when we just want to read it.
+    uint32_t GetDesignedSize() const {return designed_size_; } 
+    uint32_t GetColumnOffset(size_t col_num) const {return columns_[col_num].offset; }
+    Type  GetColumnType(size_t col_num) const {return columns_[col_num].type; }
 
     private: 
     std::vector<Column> columns_; 

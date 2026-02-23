@@ -18,18 +18,17 @@ class Catalog {
     public: 
     //pager_ must outlive this
     Catalog(Pager* pager) : pager_(pager) {
-        for (auto metadata : readAllTableMetadata(*pager_)) {
+        for (auto metadata : ReadAllTableMetadata(*pager_)) {
             tables_.emplace(metadata.table_name, metadata.schema); 
         }
     }
 
+    std::unordered_map<std::string, Schema> GetTables() const {return tables_; } 
+    Pager& GetPager() const { return *pager_; }
 
-    std::unordered_map<std::string, Schema> get_tables() const {return tables_; } 
-    Pager& get_pager() const { return *pager_; }
-
-    void create_table(const std::string& table_name, const Schema& schema); 
-    void drop_table(const std::string& table_name); 
-    //void insert_record(const std::string& table_name, const std::vector<std::string> records); 
+    void CreateTable(const std::string& table_name, const Schema& schema); 
+    void DropTable(const std::string& table_name); 
+    //void InsertRecord(const std::string& table_name, const std::vector<std::string> records); 
 
 }; 
 

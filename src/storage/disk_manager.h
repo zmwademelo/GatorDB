@@ -13,12 +13,12 @@ class DiskManager {
         //page_id is the page number you want to write to. data is a pointer to the memory in RAM where the data to be written is stored.
         // Frog: Highlight that data must contain the right size of valid memory.
         // Frog: You can use `` to differentiate code and word. i.e. `data` is a pointer ...
-        bool write_page(page_id_t page_id, const char* data);//Use char because we are dealing with raw bytes. And char epresents the most basic unit of addressable memory: a single byte. 
+        bool WritePage(page_id_t page_id, const char* data);//Use char because we are dealing with raw bytes. And char epresents the most basic unit of addressable memory: a single byte. 
 
         // Reads a 4KB buffer from a specific page_id
         // Frog: Ditto: valid memory of data
-        bool read_page(page_id_t page_id, char* data);
-        uint64_t get_file_size();
+        bool ReadPage(page_id_t page_id, char* data);
+        uint64_t GetFileSize();
 
     private: 
         std::fstream db_io_;

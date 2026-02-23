@@ -13,7 +13,7 @@
 
 int main() {
 
-  auto pager = Pager::create("gator_db.db");
+  auto pager = Pager::Create("gator_db.db");
   // Pager must outlive *this
   auto catalog = std::make_unique<Catalog>(pager.get());
 
@@ -25,12 +25,12 @@ int main() {
     std::string input;
     std::getline(std::cin, input);
     std::unique_ptr<Statement> stmt =
-        Statement::parse_statement(input);
+        Statement::ParseStatement(input);
 
     // Frog: Again, I am strongly against using nullptr to represent error.
     // Should use absl::StatusOr<std::unique_ptr>>.
     if (stmt) {
-      Executer::execute_command(*stmt, *pager, *catalog);
+      Executer::ExecuteCommand(*stmt, *pager, *catalog);
     } else {
         std::cout << "Error getting command. " << std::endl; 
         continue; 

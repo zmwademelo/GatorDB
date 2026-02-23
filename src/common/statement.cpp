@@ -9,7 +9,7 @@
 
 //2.0 
 
-void parse_type_and_length(std::string raw, Type& type, uint32_t& length, uint32_t& offset) {
+void ParseTypeAndLength(std::string raw, Type& type, uint32_t& length, uint32_t& offset) {
     std::string typeStr;
     std::string lenStr;
 
@@ -25,15 +25,15 @@ void parse_type_and_length(std::string raw, Type& type, uint32_t& length, uint32
     length = lenStr.empty() ? 0 : std::stoul(lenStr);
 }
 
-
-std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_line_) {
+//static
+std::unique_ptr<Statement> Statement::ParseStatement(const std::string& input_line_) {
     auto stmt = std::unique_ptr<Statement>(new Statement());
     std::vector<Column> columns; 
     std::stringstream ss(input_line_); 
     std::string command; 
     ss >> command; 
 
-    if (str_to_upper(command) == "CREATE") {
+    if (StrToUpper(command) == "CREATE") {
         stmt->type_ = STATEMENT_CREATE; 
 
         ss >> command; 
@@ -46,7 +46,7 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
             col.name = command;
 
             if (ss >> command) {
-                parse_type_and_length(command, col.type, col.length, col.offset);
+                ParseTypeAndLength(command, col.type, col.length, col.offset);
             }
 
             if (col.type == Type::INTEGER) { col.length = sizeof(uint32_t); } 
@@ -58,7 +58,7 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
         stmt->schema_ = Schema(columns); 
         return stmt; 
     }
-    else if (str_to_upper(command) == "DROP") {
+    else if (StrToUpper(command) == "DROP") {
         stmt->type_ = STATEMENT_DROP; 
 
         std::string table_name; 
@@ -70,7 +70,7 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
             return nullptr; 
         }
     }
-    else if (str_to_upper(command) == "INSERT") {
+    else if (StrToUpper(command) == "INSERT") {
         stmt->type_ = STATEMENT_INSERT; 
 
         ss >> stmt->table_name_; 
@@ -82,16 +82,16 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
         }
         return stmt->values_.empty() ? nullptr : std::move(stmt);
     }
-    else if (str_to_upper(command) == "SELECT") {
+    else if (StrToUpper(command) == "SELECT") {
         stmt->type_ = STATEMENT_SELECT; 
 
         std::string column, from, table_name; 
-        if ((ss >> column >> from >> table_name) && str_to_upper(from) == "FROM") {
+        if ((ss >> column >> from >> table_name) && StrToUpper(from) == "FROM") {
             stmt->table_name_ = table_name; 
             stmt->column_name_ = column; 
 
             std::string where_kw;
-            if (ss >> where_kw && str_to_upper(where_kw) == "WHERE") {
+            if (ss >> where_kw && StrToUpper(where_kw) == "WHERE") {
                 std::string op_str;
                 if (ss >> stmt->predicate_.column >> op_str >> stmt->predicate_.value) {
                     if      (op_str == "=")  stmt->predicate_.op = WhereOp::EQ;
@@ -111,14 +111,14 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
             return nullptr; 
         }
     }
-    else if (str_to_upper(command) == "DELETE") {
+    else if (StrToUpper(command) == "DELETE") {
         stmt->type_ = STATEMENT_DELETE; 
         std::string from, table_name; 
-        if ((ss >> from >> table_name) && str_to_upper(from) == "FROM") {
+        if ((ss >> from >> table_name) && StrToUpper(from) == "FROM") {
             stmt->table_name_ = table_name; 
 
             std::string where_kw;
-            if (ss >> where_kw && str_to_upper(where_kw) == "WHERE") {
+            if (ss >> where_kw && StrToUpper(where_kw) == "WHERE") {
                 std::string op_str;
                 if (ss >> stmt->predicate_.column >> op_str >> stmt->predicate_.value) {
                     if      (op_str == "=")  stmt->predicate_.op = WhereOp::EQ;
@@ -138,7 +138,7 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
             return nullptr; 
         }
     }
-    else if (str_to_upper(command) == "PEEK") {
+    else if (StrToUpper(command) == "PEEK") {
         stmt->type_ = STATEMENT_PEEK; 
         page_id_t pid; 
         if (ss >> pid) {
@@ -149,7 +149,7 @@ std::unique_ptr<Statement> Statement::parse_statement(const std::string& input_l
             return nullptr; 
         }
     }
-    else if (str_to_upper(command) == "EXIT" || str_to_upper(command) == "QUIT") {
+    else if (StrToUpper(command) == "EXIT" || StrToUpper(command) == "QUIT") {
         stmt->type_ = STATEMENT_EXIT; 
         return stmt; 
     } else {

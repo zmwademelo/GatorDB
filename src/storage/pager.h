@@ -18,18 +18,15 @@ Existing File: Use DiskManager::ReadPage(0, ...) to load the header into memory.
 */
 struct FileHeader
 {
-    // Frog: Google conversion is that class member ends with _ but struct member does not. The rationale is that class member usually should be
-    // private, but struct members are usually public.
+    uint32_t magic_number = GATORDB_MAGIC_NUMBER; // "GATR" in ASCII
+    uint32_t version = 1;
+    uint32_t catalog_page_head = 1;
+    uint32_t catalog_page_tail = 1; // Points to LAST catalog page (for appending)
+    uint32_t page_count = 1;        // page 0 and page 1 are initialized. This includes free pages
+    uint32_t free_page_head = INVALID_PAGE_ID;
+    uint32_t free_page_tail = INVALID_PAGE_ID;
 
-    uint32_t magic_number_ = GATORDB_MAGIC_NUMBER; // "GATR" in ASCII
-    uint32_t version_ = 1;
-    uint32_t catalog_page_head_ = 1;
-    uint32_t catalog_page_tail_ = 1; // Points to LAST catalog page (for appending)
-    uint32_t page_count_ = 1;        // page 0 and page 1 are initialized. This includes free pages
-    uint32_t free_page_head_ = INVALID_PAGE_ID;
-    uint32_t free_page_tail_ = INVALID_PAGE_ID;
-
-    // Frog: Unclear where the 7 comes from, better to add a comment explaining it.
+    // The padding takes remainder of Page 0
     char padding[PAGE_SIZE - 7 * sizeof(uint32_t)];
 };
 
@@ -40,10 +37,10 @@ struct PageHeader
     page_id_t next_page_id = INVALID_PAGE_ID;
     uint16_t lower_bound = sizeof(PageHeader);
     uint16_t upper_bound = PAGE_SIZE;
-    uint16_t slot_count = 0; // includes deleted slot
+    uint16_t slot_count = 0; //This includes deleted slots
     uint16_t deleted_count = 0;
-
-    uint16_t get_free_space() { return upper_bound - lower_bound; }
+    //Currently the free space does not count space freed by "deleting" a slot. 
+    uint16_t GetFreeSpace() { return upper_bound - lower_bound; }
 };
 
 struct Slot
@@ -69,7 +66,7 @@ struct Page
     char data[PAGE_SIZE]; // The actual 4096 bytes of "real estate"
 
     // Helper to give pointers to other classes
-    char *get_data() { return data; }
+    char *GetData() { return data; }
     void clear() { std::memset(data, '0', PAGE_SIZE); }
 };
 
@@ -85,8 +82,8 @@ private:
     } data_;
 
 public:
-    auto get_data() const { return data_; } // const
-    auto get_type() const { return type_; }
+    auto GetData() const { return data_; } // const
+    auto GetType() const { return type_; }
     Value(int32_t val) : type_(Type::INTEGER)
     {
         data_.integer_ = val;
@@ -96,7 +93,7 @@ public:
         data_.string_ = new char[val.length() + 1]; // Allocate memory for the string value, +1 for the null terminator
         std::strcpy(data_.string_, val.c_str());    // Copy the string data into our union
     }
-    // static Value deserialize(const char* buffer, Type type) = delete;
+    // static Value Deserialize(const char* buffer, Type type) = delete;
 
     bool operator==(const Value& other) const {
         if (type_ != other.type_) return false;
@@ -110,41 +107,43 @@ public:
 class Pager
 {
 public:
-    // Legacy Frog: Ownership of DiskManager is not clear. Consider using unique_ptr if Pager is responsible for managing the lifetime of DiskManager (i.e. "owns" it).
-    explicit Pager(std::unique_ptr<DiskManager> diskmanager); // Explicit constructor to prevent implicit conversions. It takes a pointer to a DiskManager, which it will use for all disk operations.
-    // explicit Pager(const std::string db_file_name);
-    //  Frog: Make your method naming consistent! [angry] getFileHeader
+    static std::unique_ptr<Pager> Create(const std::string db_file_name);
 
-    static std::unique_ptr<Pager> create(const std::string db_file_name);
+    const FileHeader& GetFileHeader() const { return file_header_; }
 
-    const FileHeader& get_file_header() const { return file_header_; }
 
-    page_id_t allocate_new_page();
-
-    void deallocate_page(page_id_t page_id);
+    //Page management
+    page_id_t AllocateNewPage();
+    void DeallocatePage(page_id_t page_id);
     // void mark_dirty(page_id_t page_id);
     // void flush_page(page_id_t page_id, const char* data);
     // void flush_all_pages();
 
-    std::vector<char> read_page(page_id_t page_id) const;
-    bool write_page(page_id_t page_id, const char *data) const;
+    //Disk operations
+    std::vector<char> ReadPage(page_id_t page_id) const;
+    bool WritePage(page_id_t page_id, const char *data) const;
 
-    uint16_t insert_record(const std::vector<char> &record, page_id_t page_id) const;
-    std::vector<char> get_record_raw_bytes(page_id_t page_id, uint16_t slot_num) const;
-    bool delete_record(page_id_t page_id, uint16_t slot_num) const; // If slot_count = 0 deallocate page
+    //Record CRUD based on pages
+    uint16_t InsertRecord(const std::vector<char> &record, page_id_t page_id) const;
+    std::vector<char> GetRecordRawBytes(page_id_t page_id, uint16_t slot_num) const;
+    bool DeleteRecord(page_id_t page_id, uint16_t slot_num) const; // If slot_count = 0 deallocate page
 
+    //Used to be TablePage functions
     // PageHeader get_page_header(page_id_t page_id);
     // Slot* get_slot_directory(page_id_t page_id);
 
 private:
+    explicit Pager(std::unique_ptr<DiskManager> diskmanager); // Explicit constructor to prevent implicit conversions. It takes a pointer to a DiskManager, which it will use for all disk operations.
+
     FileHeader file_header_;
-    // PageHeader page_header_;
     std::unique_ptr<DiskManager> disk_manager_;
     // The Pager should maintain a collection of Page objects in memory. When you call fetch_page, the Pager checks if it already has that page in RAM. If it does, it returns it instantly; if not, it goes to the disk.
     std::unordered_map<page_id_t, std::unique_ptr<Page>> buffer_pool_; // Caches pages in RAM.
 
-    bool load_file_header(); // Loads and validates the header on startup
-    void init_file_header();
-    void init_page(page_id_t page_id);
-    void flush_header(); // Persists the header to page 0
+    // Loads and validates the header on startup
+    bool LoadFileHeader(); 
+    void InitFileHeader();
+    void InitPage(page_id_t page_id); 
+    // Persists the header to page 0
+    void FlushFileHeader(); 
 };
